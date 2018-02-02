@@ -9,7 +9,7 @@
 }
 
 .bg-parallax-2 {
-  background-image: url("/images/iphone-bg.png");
+  background-image: url("../images/iphone-bg.png");
   min-height: 636px;
   margin-right: 600px;
   background-position: left;
@@ -19,7 +19,7 @@
 
 
 .bg-parallax-3 {
-  background-image: url("/images/plants-bg.jpg");
+  background-image: url("../images/plants-bg.jpg");
   min-height: 300px;
   width: auto;
   background-position: center;
@@ -273,7 +273,7 @@ hr {
 
 /* line 234, ../sass/style.scss */
 #paralx {
-  background-image: url("/images/plants-bg.jpg");
+  background-image: url("../images/plants-bg.jpg");
   min-height: 300px;
   background-attachment: fixed;
   background-position: center;
@@ -299,7 +299,7 @@ hr {
 
 /* line 255, ../sass/style.scss */
 #prblm {
-  background-image: url("/images/plants-bg.jpg");
+  background-image: url("../images/plants-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -436,7 +436,7 @@ ul#social-button {
   padding: 0 0 100px;
 }
 .subscribe {
-  background-image: url("/images/keyboard-bg.jpg");
+  background-image: url("../images/keyboard-bg.jpg");
   
   min-height: 400px;
   background-attachment: fixed;
