@@ -17,15 +17,23 @@
     <section class="hero1">
       <div class="bg-parallax-1">
         <div class="row">
-        <div class="col-md-12">
         
-            <div class="float-right" onclick="openNav(this)">
-              <div class="bar1"></div>
+            <div id="mynav" class="sidenav">
+ 				 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;	</a>
+  				 <a href="#intro">Introducton</a>
+ 				 <a href="#features">Features</a>
+ 				 <a href="#portfolio">Portfolio</a>
+ 				 <a href="#team">Team</a>
+ 				 <a href="#contct">Get in Touch</a>
+			</div>
+            <div class="nav">
+            	<span id="navicon" onclick="openNav()">&#9776;</span>
+              <!--<div class="bar1"></div>
               <div class="bar2"></div>
               <div class="bar3"></div>
-            </div>
+            </div>-->
          </div>
-        </div>
+        
         <div class="hero">
           <div class="row">
             <!--<div class="col-md-8 col-md-offset-2 text-center inner">-->
@@ -44,7 +52,7 @@
     </section>  
   </header>
 
-  <section class="intro text-center" id="intro">
+  <section class="intro text-center section-padding" id="intro">
     <div class="container">
       <div class="row">
         <div class="col-md-8">
@@ -85,52 +93,54 @@
     </div>
   </section>
 
-    <section class="prblm text-center">
+    <section>
     <div class="container bg-parallax-2">
-     <div class="myCarousel">
-      <div class="carousel slide" data-ride="carousel" style="height: 635px;" >
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>   
-        </ol>
-        <div class="carousel-inner">
-          <div class="item active">
-            <h1 id="h2">RESPONSIVE DESIGN SPECIALIST</h1>
-            <img id="h3" src="images/h1-bg.png"><br><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-            <p> Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus faucibus facilisis. Maecenas ornare augue vitae sollicitudin accumsan.</p>
-            <p> Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem. Suspendisse sed venenatis odio, quis lobortis eros..</p>
-          </div>
-          <div class="item">
-            <h1 id="h2">BOOTSTRAP SPECIALIST</h1>
-            <img id="h3" src="images/h1-bg.png"><br><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-            <p> Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus faucibus facilisis. Maecenas ornare augue vitae sollicitudin accumsan.</p>
-            <p>Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem. Suspendisse sed venenatis odio, quis lobortis eros..</p>
-          </div>
-          <div class="item">
-            <h1 id="h2">BOOTSTRAP SPECIALIST 2</h1>
-            <img id="h3" src="images/h1-bg.png"><br><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-            <p>Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus faucibus facilisis. Maecenas ornare augue vitae sollicitudin accumsan.</p>
-            <p>Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem. Suspendisse sed venenatis odio, quis lobortis eros..</p>
-          </div>
-          <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(0)"></span> 
-              <span class="dot" onclick="currentSlide(1)"></span> 
-              <span class="dot" onclick="currentSlide(2)"></span>
-          </div>  
-        </div>
-      </div>
-    </div>
+     <div class="row">
+     	<div class="myCarousel">
+           
+           	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+           		<div class="carousel slide" data-ride="carousel">
+           			    <ol class="carousel-indicators">
+              				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              				<li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+             				 <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+            			</ol>
+            			<div class="carousel-inner">
+            				<div class="item active">
+            					<h1 id="h2">RESPONSIVE DESIGN SPECIALIST</h1>
+            					<img id="h3" src="images/h1-bg.png"><br><br>
+            					<p id="carsl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+            					<p id="carsl"> Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus faucibus facilisis. Maecenas ornare augue vitae sollicitudin accumsan.</p>
+           						 <p id="carsl"> Etiam eget libero et erat eleifend consectetur 		a nec lectus. Sed id tellus lorem. Suspendisse sed venenatis odio, quis lobortis eros..</p>
+            				</div>
+            				<div class="item">
+            					<h1 id="h2">BOOTSTRAP SPECIALIST</h1>
+            					<img id="h3" src="images/h1-bg.png"><br><br>
+            					<p id="carsl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+            					<p id="carsl"> Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus faucibus facilisis. Maecenas ornare augue vitae sollicitudin accumsan.</p>
+           					    <p id="carsl">Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem. Suspendisse sed venenatis odio, quis lobortis eros..</p>
+            				</div>
+            				<div class="item">
+            					<h1 id="h2">BOOTSTRAP SPECIALIST 2</h1>
+            					<img id="h3" src="images/h1-bg.png"><br><br>
+            					<p id="carsl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+            					<p id="carsl">Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus faucibus facilisis. Maecenas ornare augue vitae sollicitudin accumsan.</p>
+            					<p id="carsl">Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem. Suspendisse sed venenatis odio, quis lobortis eros..</p>
+            				</div>
+            			</div>
+            			
+           		</div>
+           </div>		
+     	
+     </div>
+ </div>
     </div>
   </section>
 
   <section class="prblm text-center" id="paralx">
     <div class="container bg-parallax-3">
       <div class="row">
-        <div class="col-md-8" id="swag">
+        <div class="col-md-12" id="swag">
           <h1>I GOT 99 PROBLEMS<br>
           <p id="spn">BUT <em>DESIGN</em> 'AINT ONE</p>
           </h1>
@@ -144,39 +154,119 @@
     
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
-          <a href="/w3images/lights.jpg">
-            <img src="images/portfolio-01.jpg" alt="Lights" class="image">
-          </a>
-          <h1 id="a2"><b>CREATIVE MINDS</b></h1>
-          <hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-        </div>
-        <div class="col-md-4">
-          <a href="/w3images/nature.jpg">
-            <img src="images/portfolio-02.jpg" alt="laptop" class="image">
-          </a>
-          <h1 id="a2"><b>CREATIVE HEARTS</b></h1>
-          <hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-        </div>
-        <div class="col-md-4">
-          <a href="/w3images/fjords.jpg">
-          <img src="images/portfolio-03.jpg" alt="dog" class="image">
-          </a>
-          <h1 id="a2"><b>CREATIVE IDEAS</b></h1>
-          <hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-        </div>
-        <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(0)"></span> 
-              <span class="dot" onclick="currentSlide(1)"></span> 
-              <span class="dot" onclick="currentSlide(2)"></span>
-          </div>
-      </div>
-    </div>
+      	<div class="card card-raised card-carousel">
+      	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      	<div class="carousel slide" data-ride="carousel">
+      		<ol class="carousel-indicators">
+      			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              	<li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+            </ol>
+		<div class="carousel-inner">
+			<div class="item active">
+        		<div class="col-md-4">
+        			<div class="imge">
+        	
+         					<a href="#">
+            				<img src="images/portfolio-01.jpg" alt="Lights" class="image">
+            				<div class="overlay">
+            					<i class="fa fa-search"></i>
+            				</div>
+          					</a>
+          				<h1 id="a2"><b>CREATIVE MINDS</b></h1>
+          				<hr>
+          				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+        			</div>
+    			</div>
+    
+        		<div class="col-md-4">
+        			<div class="imge">
+        	
+          				<a href="#">
+            			<img src="images/portfolio-02.jpg" alt="laptop" class="image">
+             			<div class="overlay">
+            				<i class="fa fa-search"></i>
+            			</div>
+          				</a>
+          			<h1 id="a2"><b>CREATIVE HEARTS</b></h1>
+          			<hr>
+          			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+        		</div>
+   		 		</div>
+        		<div class="col-md-4">
+        			<div class="imge">
+        	
+         				 <a href="#">
+         				 <img src="images/portfolio-03.jpg" alt="dog" class="image">
+           				 <div class="overlay">
+            				  <i class="fa fa-search"></i>
+            			 </div>
+                         </a>
+          				<h1 id="a2"><b>CREATIVE IDEAS</b></h1>
+          				<hr>
+          				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                	</div>
+    			</div>
+    		</div>
+		
 
-  </section> 
+
+			<div class="item">
+        		<div class="col-md-4">
+        			<div class="imge">
+        	
+         					<a href="#">
+            				<img src="images/portfolio-01.jpg" alt="Lights" class="image">
+            				<div class="overlay">
+            					<i class="fa fa-search"></i>
+            				</div>
+          					</a>
+          				<h1 id="a2"><b>CREATIVE MINDS</b></h1>
+          				<hr>
+          				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+        			</div>
+    			</div>
+    
+        		<div class="col-md-4">
+        			<div class="imge">
+        	
+          				<a href="#">
+            			<img src="images/portfolio-02.jpg" alt="laptop" class="image">
+             			<div class="overlay">
+            				<i class="fa fa-search"></i>
+            			</div>
+          				</a>
+          			<h1 id="a2"><b>CREATIVE HEARTS</b></h1>
+          			<hr>
+          			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+        			</div>
+   		 		</div>
+        		<div class="col-md-4">
+        			<div class="imge">
+        	
+         				 <a href="#">
+         				 <img src="images/portfolio-03.jpg" alt="dog" class="image">
+           				 <div class="overlay">
+            				  <i class="fa fa-search"></i>
+            			 </div>
+                         </a>
+          				<h1 id="a2"><b>CREATIVE IDEAS</b></h1>
+          				<hr>
+          				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                	</div>
+    			</div>
+    	</div>
+		</div>
+
+		 <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"></a>
+		 <a class="right carousel-control" href="#carousel-example-generic" data-slide="next"></a>
+	</div>
+	     
+    </div>   
+   </div>
+  </div>
+  </div>
+
+</section> 
 
    <div class="ignite text-center">
     <div class="container">
@@ -187,7 +277,7 @@
       </div>
     </div>
   </div>
-  <section class="feature text-center section-padding" id="features">
+  <section class="feature text-center section-padding" id="team">
     <div id="intro2" class="container">
       <div class="row">
         <div class="col-md-12">
@@ -357,9 +447,13 @@
 </html>
 
 <script type="text/javascript">
-function openNav(x)
+function openNav()
 {
-  x.classList.toggle("change");
+  document.getElementById("mynav").style.width = "100%";
 }
+function closeNav() {
+    document.getElementById("mynav").style.width = "0";
+}
+
 </script>
          

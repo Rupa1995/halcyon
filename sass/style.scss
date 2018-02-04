@@ -10,6 +10,7 @@
 
 .bg-parallax-2 {
   background-image: url("../images/iphone-bg.png");
+
   min-height: 636px;
   margin-right: 600px;
   background-position: left;
@@ -34,7 +35,11 @@ html body {
 body {
   overflow-x: hidden;
 }
-
+.nav{
+  float: right;
+  padding-top: 50px;
+  padding-right: 100px;
+}
 
 /* line 22, ../sass/style.scss */
 .hero {
@@ -55,30 +60,58 @@ body {
   padding-left: 350px;
   padding-bottom: 500px;
 }
+#navicon {
+  font-size: 40px;
+  cursor: pointer;
+  font-weight: 90px;
 
+}
+.indicator {
+  position: absolute;
+  right: 0 !important;
+}
+.sidenav {
+    height: 33%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 8px;
+    text-align:center;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+    color:#eee ;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 /* line 40, ../sass/style.scss */
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s;
-}
 
-/* line 49, ../sass/style.scss */
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-/* line 53, ../sass/style.scss */
-.change .bar2 {
-  opacity: 0;
-}
-/* line 56, ../sass/style.scss */
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
-}
 
 /* line 62, ../sass/style.scss */
 .button {
@@ -222,24 +255,68 @@ p {
   padding-left: 10px;
   padding-right: 10px;
 }
-
-/* line 194, ../sass/style.scss */
-.myCarousel {
-  text-align: center;
-  background-color: white;
+ .myCarousel{
+    text-align: center;
+ background-color: #fff;
   position: absolute;
-  width: 50%;
+  width: 695px;
   right: 0px;
-  height: 632px;
+  height: 600px;
   float: right;
   display: block;
-  box-sizing: border-box;
+ }
+ .carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+
+.cursor-icons {
+  display: none;
+}
+
+.carousel-control {
+  width: 50%;
+}
+
+.carousel .right:hover {
+  cursor: url("http://johnuberbacher.com/projects/codepen/arrow-right.png"), default !important
+}
+
+.carousel .left:hover {
+  cursor: url("http://johnuberbacher.com/projects/codepen/arrow-left.png"), default !important
+}
+
+.carousel-indicators li {
+  margin-top: 100px;
+  border-radius: 13px;
+  height: 13px;
+  width: 13px;
+  margin: 2px;
+  font-weight: 800;
+  color: black;
+  border: 3px solid #A9A9A9;
+  
+}
+.carousel-indicators {
+  bottom: -50px;
 
 }
 
+ol.carousel-indicators li.active {
+ height: 13px;
+ width: 13px;
+ 
+ background-color: black;
+}
+#carsl {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+
 /* line 205, ../sass/style.scss */
 #h3 {
-  padding-left: 200px;
+  padding-left: 230px;
 }
 
 /* line 208, ../sass/style.scss */
@@ -297,15 +374,7 @@ hr {
   width: 500px;
 }
 
-/* line 255, ../sass/style.scss */
-#prblm {
-  background-image: url("../images/plants-bg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  min-height: 300px;
-}
+
 
 /* line 264, ../sass/style.scss */
 #swag {
@@ -315,7 +384,7 @@ hr {
   font-family: "Varela Round", sans-serif;
   color: white;
   letter-spacing: 5px;
-  padding-left: 400px;
+  
   font-size: 37px;
 }
 
@@ -349,10 +418,6 @@ hr {
   background-color: rgb(61,201,179);
   color: #fff;
 } 
-
-
-
-
 /* line 285, ../sass/style.scss */
 .image {
   width: 100%;
@@ -363,7 +428,20 @@ hr {
 }
 
 /* line 293, ../sass/style.scss */
-
+.overlay{
+  position: absolute;
+  bottom:0;
+  left: 0;
+  right: 0;
+  background-color: rgba(100, 194, 158, 0.8);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: 0.5s ease;
+}
+.image:hover .overlay {
+  width: 100%;
+}
 
 /* line 297, ../sass/style.scss */
 .ignite {
