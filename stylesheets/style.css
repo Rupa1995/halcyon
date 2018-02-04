@@ -58,24 +58,7 @@ body {
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
-@media only screen and (max-width: 500px){
-  .hero {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-  }
-  hr {
-      display: block;
-      margin-top: 1.5em;
-      margin-bottom: 1.5em;
-      margin-left: 20em;
-      margin-right: 20em;
-      border-top: 4px solid #3dc9b3;
 
-  }
-}
 
 /* line 30, ../sass/style.scss */
 /* line 57, ../sass/style.scss */
@@ -125,7 +108,7 @@ body {
   color: #818181;
   display: block;
   transition: 0.3s;
-}
+}  
 
 /* line 100, ../sass/style.scss */
 .sidenav a:hover {
@@ -141,16 +124,9 @@ body {
   margin-left: 50px;
 }
 
-@media screen and (max-height: 500px) {
-  /* line 113, ../sass/style.scss */
-  .sidenav {
-    padding-top: 15px;
-  }
-
-  /* line 114, ../sass/style.scss */
-  .sidenav a {
-    font-size: 18px;
-  }
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 /* line 40, ../sass/style.scss */
 /* line 62, ../sass/style.scss */
