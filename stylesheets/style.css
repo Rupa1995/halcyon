@@ -58,6 +58,24 @@ body {
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
+@media only screen and (max-width: 500px){
+  .hero {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+  hr {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 1.5em;
+      margin-left: 20em;
+      margin-right: 20em;
+      border-top: 4px solid #3dc9b3;
+
+  }
+}
 
 /* line 30, ../sass/style.scss */
 /* line 57, ../sass/style.scss */
@@ -123,7 +141,7 @@ body {
   margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 500px) {
   /* line 113, ../sass/style.scss */
   .sidenav {
     padding-top: 15px;
