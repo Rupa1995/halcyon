@@ -35,6 +35,11 @@ html body {
 body {
   overflow-x: hidden;
 }
+@media only screen and (max-width: 500px){
+  .nav {
+    float:right;
+  }
+}
 
 .nav{
   float: right;
