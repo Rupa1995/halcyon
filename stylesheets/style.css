@@ -41,26 +41,36 @@ body {
   overflow-x: hidden;
 }
 
-@media only screen and (max-width: 500px) {
-  /* line 39, ../sass/style.scss */
-  hr {
-    display: block;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    margin-left: 20em;
-    margin-right: 20em;
-    border-top: 4px solid #3dc9b3;
+@media (min-width: 992px) {
+  /* line 40, ../sass/style.scss */
+  .container {
+    width: 970px;
+  }
+
+  /* line 43, ../sass/style.scss */
+  .col-md-offset-2 {
+    margin-left: 16.66%;
+  }
+
+  /* line 46, ../sass/style.scss */
+  .col-md-8 {
+    width: 66.66%;
+  }
+
+  /* line 49, ../sass/style.scss */
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
   }
 }
-/* line 50, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 .nav {
   float: right;
-  padding-top: 50px;
-  padding-right: 100px;
+  padding-top: 1.2%;
+  padding-right: 8%;
 }
 
 /* line 22, ../sass/style.scss */
-/* line 57, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 .hero {
   position: absolute;
   top: 50%;
@@ -70,7 +80,7 @@ body {
 }
 
 /* line 30, ../sass/style.scss */
-/* line 66, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 .float-right {
   display: inline-block;
   cursor: pointer;
@@ -81,20 +91,20 @@ body {
   padding-bottom: 500px;
 }
 
-/* line 75, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 #navicon {
   font-size: 40px;
   cursor: pointer;
   font-weight: 90px;
 }
 
-/* line 81, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 .indicator {
   position: absolute;
   right: 0 !important;
 }
 
-/* line 85, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
 .sidenav {
   height: 33%;
   width: 0;
@@ -109,7 +119,7 @@ body {
   text-align: center;
 }
 
-/* line 99, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -119,12 +129,12 @@ body {
   transition: 0.3s;
 }
 
-/* line 109, ../sass/style.scss */
+/* line 116, ../sass/style.scss */
 .sidenav a:hover {
   color: #eee;
 }
 
-/* line 113, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -134,19 +144,19 @@ body {
 }
 
 @media screen and (max-height: 450px) {
-  /* line 122, ../sass/style.scss */
+  /* line 129, ../sass/style.scss */
   .sidenav {
     padding-top: 15px;
   }
 
-  /* line 123, ../sass/style.scss */
+  /* line 130, ../sass/style.scss */
   .sidenav a {
     font-size: 18px;
   }
 }
 /* line 40, ../sass/style.scss */
 /* line 62, ../sass/style.scss */
-/* line 129, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 .button {
   display: inline-block;
   padding: 20px 40px;
@@ -168,18 +178,18 @@ body {
 }
 
 /* line 83, ../sass/style.scss */
-/* line 150, ../sass/style.scss */
+/* line 157, ../sass/style.scss */
 #intro {
   background-color: whitesmoke;
   padding-top: 20px;
   padding-right: 80px;
-  padding-left: 256px;
+  padding-left: 300px;
   padding-bottom: 100px;
   text-align: center;
 }
 
 /* line 92, ../sass/style.scss */
-/* line 160, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 .fadeInDown {
   font-size: 40px;
   letter-spacing: 12px;
@@ -189,7 +199,7 @@ body {
 }
 
 /* line 101, ../sass/style.scss */
-/* line 169, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 .fadeInUp {
   display: block;
   font-family: "Varela Round", sans-serif;
@@ -198,7 +208,7 @@ body {
 }
 
 /* line 108, ../sass/style.scss */
-/* line 177, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 #h1, #h2 {
   font-size: 15px;
   text-transform: uppercase;
@@ -211,7 +221,7 @@ body {
 }
 
 /* line 119, ../sass/style.scss */
-/* line 189, ../sass/style.scss */
+/* line 196, ../sass/style.scss */
 .blockquote {
   color: #8c9398;
   font-family: "Varela Round", sans-serif;
@@ -219,21 +229,21 @@ body {
 }
 
 /* line 125, ../sass/style.scss */
-/* line 196, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 #a1 {
   color: black;
   font-family: "Varela Round", sans-serif;
 }
 
 /* line 130, ../sass/style.scss */
-/* line 202, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
 #s1 {
   color: #a1a9b0;
   display: inline-block;
 }
 
 /* line 135, ../sass/style.scss */
-/* line 208, ../sass/style.scss */
+/* line 215, ../sass/style.scss */
 .intro2 {
   padding-top: 20px;
   padding-right: 100px;
@@ -243,7 +253,7 @@ body {
 }
 
 /* line 144, ../sass/style.scss */
-/* line 217, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 .icon {
   height: 175px;
   width: 175px;
@@ -264,7 +274,7 @@ body {
 }
 
 /* line 163, ../sass/style.scss */
-/* line 237, ../sass/style.scss */
+/* line 244, ../sass/style.scss */
 #a2 {
   color: #353535;
   font-family: "Varela Round", sans-serif;
@@ -273,14 +283,14 @@ body {
 }
 
 /* line 169, ../sass/style.scss */
-/* line 245, ../sass/style.scss */
+/* line 252, ../sass/style.scss */
 .responsive {
   width: 980px;
   height: 650px;
 }
 
 /* line 174, ../sass/style.scss */
-/* line 251, ../sass/style.scss */
+/* line 258, ../sass/style.scss */
 .leftHalf {
   background-repeat: no-repeat;
   background-position: center;
@@ -291,7 +301,7 @@ body {
 }
 
 /* line 183, ../sass/style.scss */
-/* line 261, ../sass/style.scss */
+/* line 268, ../sass/style.scss */
 p {
   color: #8c9398;
   word-spacing: 1px;
@@ -302,7 +312,7 @@ p {
   padding-right: 10px;
 }
 
-/* line 270, ../sass/style.scss */
+/* line 277, ../sass/style.scss */
 .myCarousel {
   text-align: center;
   background-color: #fff;
@@ -314,33 +324,33 @@ p {
   display: block;
 }
 
-/* line 280, ../sass/style.scss */
+/* line 287, ../sass/style.scss */
 .carousel-control.left,
 .carousel-control.right {
   background-image: none;
 }
 
-/* line 285, ../sass/style.scss */
+/* line 292, ../sass/style.scss */
 .cursor-icons {
   display: none;
 }
 
-/* line 289, ../sass/style.scss */
+/* line 296, ../sass/style.scss */
 .carousel-control {
   width: 50%;
 }
 
-/* line 293, ../sass/style.scss */
+/* line 300, ../sass/style.scss */
 .carousel .right:hover {
   cursor: url("http://johnuberbacher.com/projects/codepen/arrow-right.png"), default !important;
 }
 
-/* line 297, ../sass/style.scss */
+/* line 304, ../sass/style.scss */
 .carousel .left:hover {
   cursor: url("http://johnuberbacher.com/projects/codepen/arrow-left.png"), default !important;
 }
 
-/* line 301, ../sass/style.scss */
+/* line 308, ../sass/style.scss */
 .carousel-indicators li {
   margin-top: 100px;
   border-radius: 13px;
@@ -352,32 +362,32 @@ p {
   border: 3px solid #A9A9A9;
 }
 
-/* line 312, ../sass/style.scss */
+/* line 319, ../sass/style.scss */
 .carousel-indicators {
   bottom: -50px;
 }
 
-/* line 317, ../sass/style.scss */
+/* line 324, ../sass/style.scss */
 ol.carousel-indicators li.active {
   height: 13px;
   width: 13px;
   background-color: black;
 }
 
-/* line 323, ../sass/style.scss */
+/* line 330, ../sass/style.scss */
 #carsl {
   padding-left: 100px;
   padding-right: 100px;
 }
 
 /* line 205, ../sass/style.scss */
-/* line 330, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 #h3 {
   padding-left: 230px;
 }
 
 /* line 208, ../sass/style.scss */
-/* line 335, ../sass/style.scss */
+/* line 342, ../sass/style.scss */
 hr {
   display: block;
   margin-top: 1.5em;
@@ -388,7 +398,7 @@ hr {
 }
 
 /* line 218, ../sass/style.scss */
-/* line 345, ../sass/style.scss */
+/* line 352, ../sass/style.scss */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -403,13 +413,13 @@ hr {
 }
 
 /* line 230, ../sass/style.scss */
-/* line 359, ../sass/style.scss */
+/* line 366, ../sass/style.scss */
 .dot:hover {
   background-color: #000;
 }
 
 /* line 234, ../sass/style.scss */
-/* line 364, ../sass/style.scss */
+/* line 371, ../sass/style.scss */
 #paralx {
   background-image: url("../images/plants-bg.jpg");
   min-height: 300px;
@@ -421,7 +431,7 @@ hr {
 }
 
 /* line 244, ../sass/style.scss */
-/* line 375, ../sass/style.scss */
+/* line 382, ../sass/style.scss */
 #text1 {
   padding-top: 20px;
   font-size: 60px;
@@ -432,13 +442,13 @@ hr {
 }
 
 /* line 252, ../sass/style.scss */
-/* line 385, ../sass/style.scss */
+/* line 392, ../sass/style.scss */
 .swag {
   width: 500px;
 }
 
 /* line 264, ../sass/style.scss */
-/* line 392, ../sass/style.scss */
+/* line 399, ../sass/style.scss */
 #swag {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -450,7 +460,7 @@ hr {
 }
 
 /* line 274, ../sass/style.scss */
-/* line 404, ../sass/style.scss */
+/* line 411, ../sass/style.scss */
 #spn {
   padding-top: 15px;
   font-size: 25px;
@@ -458,7 +468,7 @@ hr {
 }
 
 /* line 279, ../sass/style.scss */
-/* line 411, ../sass/style.scss */
+/* line 418, ../sass/style.scss */
 .dwn-btn {
   padding-right: 2px;
   padding-left: 2px;
@@ -474,14 +484,14 @@ hr {
   border-radius: 50%;
 }
 
-/* line 429, ../sass/style.scss */
+/* line 436, ../sass/style.scss */
 .dwn-btn:hover {
   background-color: #3dc9b3;
   color: #fff;
 }
 
 /* line 285, ../sass/style.scss */
-/* line 434, ../sass/style.scss */
+/* line 441, ../sass/style.scss */
 .image {
   width: 100%;
   display: block;
@@ -491,7 +501,7 @@ hr {
 }
 
 /* line 293, ../sass/style.scss */
-/* line 443, ../sass/style.scss */
+/* line 450, ../sass/style.scss */
 .overlay {
   position: absolute;
   bottom: 0;
@@ -504,13 +514,13 @@ hr {
   transition: 0.5s ease;
 }
 
-/* line 454, ../sass/style.scss */
+/* line 461, ../sass/style.scss */
 .image:hover .overlay {
   width: 100%;
 }
 
 /* line 297, ../sass/style.scss */
-/* line 459, ../sass/style.scss */
+/* line 466, ../sass/style.scss */
 .ignite {
   background-color: #242830;
   padding: 70px 0;
@@ -518,7 +528,7 @@ hr {
 }
 
 /* line 302, ../sass/style.scss */
-/* line 466, ../sass/style.scss */
+/* line 473, ../sass/style.scss */
 .ignite-btn {
   display: inline-block;
   padding: 25px 40px;
@@ -530,32 +540,32 @@ hr {
 }
 
 /* line 310, ../sass/style.scss */
-/* line 477, ../sass/style.scss */
+/* line 484, ../sass/style.scss */
 html, html a {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
 
 /* line 313, ../sass/style.scss */
-/* line 482, ../sass/style.scss */
+/* line 489, ../sass/style.scss */
 a {
   transition: all 0.5s;
   text-decoration: none;
 }
 
 /* line 318, ../sass/style.scss */
-/* line 488, ../sass/style.scss */
+/* line 495, ../sass/style.scss */
 .ignite-btn:hover {
   color: #3dc9b3;
   border-color: #3dc9b3;
   text-decoration: none;
 }
 
-/* line 493, ../sass/style.scss */
+/* line 500, ../sass/style.scss */
 .social {
   margin-top: 25px;
 }
 
-/* line 496, ../sass/style.scss */
+/* line 503, ../sass/style.scss */
 ul#social-button {
   list-style: none;
   margin: 0;
@@ -563,7 +573,7 @@ ul#social-button {
   list-style-type: none;
 }
 
-/* line 504, ../sass/style.scss */
+/* line 511, ../sass/style.scss */
 .social-btn {
   width: 40px;
   height: 40px;
@@ -579,18 +589,18 @@ ul#social-button {
   display: inline-block;
 }
 
-/* line 520, ../sass/style.scss */
+/* line 527, ../sass/style.scss */
 .social-btn:hover {
   background-color: #3dc9b3;
   color: #fff;
 }
 
-/* line 525, ../sass/style.scss */
+/* line 532, ../sass/style.scss */
 .section-padding {
   padding: 0 0 100px;
 }
 
-/* line 528, ../sass/style.scss */
+/* line 535, ../sass/style.scss */
 .subscribe {
   background-image: url("../images/keyboard-bg.jpg");
   min-height: 400px;
@@ -601,13 +611,13 @@ ul#social-button {
   text-align: center;
 }
 
-/* line 539, ../sass/style.scss */
+/* line 546, ../sass/style.scss */
 #subsc {
   padding-top: 110px;
   padding-bottom: 60px;
 }
 
-/* line 543, ../sass/style.scss */
+/* line 550, ../sass/style.scss */
 .subscribe h1 {
   margin-top: 20px;
   display: inline-block;
@@ -622,14 +632,14 @@ ul#social-button {
   margin-bottom: 40px;
 }
 
-/* line 556, ../sass/style.scss */
+/* line 563, ../sass/style.scss */
 .subscribe i {
   display: inline-block;
   font-size: 2em;
   margin-bottom: 20px;
 }
 
-/* line 561, ../sass/style.scss */
+/* line 568, ../sass/style.scss */
 .subscribe input[type=text] {
   background-color: rgba(255, 255, 255, 0.1);
   border: solid 1px;
@@ -642,7 +652,7 @@ ul#social-button {
   font-family: "Varela Round", sans-serif;
 }
 
-/* line 573, ../sass/style.scss */
+/* line 580, ../sass/style.scss */
 .subscribe input[type=submit] {
   background-color: rgba(61, 201, 179, 0.5);
   border: solid 1px;
@@ -656,12 +666,12 @@ ul#social-button {
   font-family: "Varela Round", sans-serif;
 }
 
-/* line 585, ../sass/style.scss */
+/* line 592, ../sass/style.scss */
 .subscribe input[type=submit]:hover {
   background-color: #3dc9b3;
 }
 
-/* line 588, ../sass/style.scss */
+/* line 595, ../sass/style.scss */
 .up-btn {
   width: 50px;
   height: 50px;
@@ -677,13 +687,13 @@ ul#social-button {
   position: relative;
 }
 
-/* line 602, ../sass/style.scss */
+/* line 609, ../sass/style.scss */
 .up-btn:hover {
   background-color: #3dc9b3;
   color: white;
 }
 
-/* line 606, ../sass/style.scss */
+/* line 613, ../sass/style.scss */
 #drop {
   font-size: 15px;
   text-transform: uppercase;
@@ -695,24 +705,24 @@ ul#social-button {
   font-family: "Varela Round", sans-serif;
 }
 
-/* line 616, ../sass/style.scss */
+/* line 623, ../sass/style.scss */
 #contct {
   background-color: whitesmoke;
 }
 
-/* line 620, ../sass/style.scss */
+/* line 627, ../sass/style.scss */
 .light-box {
   background-color: #fff;
   text-align: center;
   padding-bottom: 20px;
 }
 
-/* line 627, ../sass/style.scss */
+/* line 634, ../sass/style.scss */
 .contact-details {
   margin: 50px 0;
 }
 
-/* line 630, ../sass/style.scss */
+/* line 637, ../sass/style.scss */
 #cntct {
   font-size: 14px;
   text-transform: uppercase;
@@ -724,42 +734,42 @@ ul#social-button {
   font-family: "Varela Round", sans-serif;
 }
 
-/* line 640, ../sass/style.scss */
+/* line 647, ../sass/style.scss */
 #fa-i {
   color: black;
   padding-bottom: 15px;
   font-size: 20px;
 }
 
-/* line 646, ../sass/style.scss */
+/* line 653, ../sass/style.scss */
 footer {
   background-color: #242830;
   padding: 40px 0 30px;
 }
 
-/* line 652, ../sass/style.scss */
+/* line 659, ../sass/style.scss */
 .legals {
   text-align: left;
 }
 
-/* line 655, ../sass/style.scss */
+/* line 662, ../sass/style.scss */
 footer a {
   color: #a1a9b0;
 }
 
-/* line 658, ../sass/style.scss */
+/* line 665, ../sass/style.scss */
 footer a:hover {
   color: #3dc9b3;
   text-decoration: none;
 }
 
-/* line 662, ../sass/style.scss */
+/* line 669, ../sass/style.scss */
 footer p {
   color: #fff;
   font-family: "Varela Round", sans-serif;
 }
 
-/* line 666, ../sass/style.scss */
+/* line 673, ../sass/style.scss */
 .credit {
   text-align: right;
 }
