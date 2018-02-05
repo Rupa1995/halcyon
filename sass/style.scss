@@ -63,35 +63,16 @@ body {
 .inner {
   padding-top: 390px;
 }
-
 .nav{
   float: right;
   padding-top: 6.2%;
   padding-right: 10%;
-}
-
-/* line 22, ../sass/style.scss */
-
-
-/* line 30, ../sass/style.scss */
-.float-right {
-  display: inline-block;
-  cursor: pointer;
-  position: absolute;
-  padding-right: 100px;
-  padding-top: 100px;
-  padding-left: 350px;
-  padding-bottom: 500px;
 }
 #navicon {
   font-size: 40px;
   cursor: pointer;
   font-weight: 90px;
 
-}
-.indicator {
-  position: absolute;
-  right: 0 !important;
 }
 .sidenav {
     height: 32%;
@@ -132,6 +113,29 @@ body {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+
+
+
+
+/* line 22, ../sass/style.scss */
+
+
+/* line 30, ../sass/style.scss */
+.float-right {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  padding-right: 100px;
+  padding-top: 100px;
+  padding-left: 350px;
+  padding-bottom: 500px;
+}
+
+.indicator {
+  position: absolute;
+  right: 0 !important;
 }
 /* line 40, ../sass/style.scss */
 
