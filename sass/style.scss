@@ -5,6 +5,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
   text-align: center;
 }
 
@@ -51,21 +52,26 @@ body {
     float: left;
 }
 }
-
-.nav{
-  float: right;
-  padding-top: 1.2%;
-  padding-right: 8%;
-}
-
-/* line 22, ../sass/style.scss */
-.hero {
+  .hero {
   position: absolute;
-  top: 50%;
+  
+  top: 25%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
+.inner {
+  padding-top: 390px;
+}
+
+.nav{
+  float: right;
+  padding-top: 6.2%;
+  padding-right: 10%;
+}
+
+/* line 22, ../sass/style.scss */
+
 
 /* line 30, ../sass/style.scss */
 .float-right {
@@ -342,8 +348,8 @@ hr {
   display: block;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
-  margin-left: 45.8%;
-  margin-right: 45.8%;
+  margin-left: 43.9%;
+  margin-right: 45.9%;
   border-top: 4px solid #3dc9b3;
 }
 
