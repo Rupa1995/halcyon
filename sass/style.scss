@@ -96,6 +96,12 @@ span{
     box-shadow: 0px 3px 0px 0px #309383;
     font-family: "Varela Round", sans-serif;
   }
+
+  @media only screen and (max-width: 550px){
+    .col-md-12 {
+      font-size: 60px;
+    }
+  }
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .nav{
@@ -287,10 +293,17 @@ p{
   position: absolute;
   width: 54.2%;
   right: 0px;
-  height: 636px;
+  height: 600px;
   float: right;
   display: block;
   overflow: hidden;
+
+  @media screen and (max-width: 768px){
+  
+    width: 100%;
+  
+}
+
   img{
       padding-left: 265px;
    }
@@ -305,6 +318,7 @@ p{
       font-family: "Varela Round", sans-serif;
    }
 }
+
 
 
 .carousel-control{
@@ -723,9 +737,3 @@ footer{
   text-align: right;
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
- 
-
-
-
-
