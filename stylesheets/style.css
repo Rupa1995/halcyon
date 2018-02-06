@@ -758,4 +758,14 @@ footer p {
     background-color: red;
     display: inherit !important;
   }
+
+  /* line 680, ../sass/style.scss */
+  p {
+    font-size: 20px;
+  }
+
+  /* line 683, ../sass/style.scss */
+  body {
+    font-size: 21px;
+  }
 }
