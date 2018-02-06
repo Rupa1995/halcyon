@@ -1,3 +1,7 @@
+
+
+
+
 .bg-parallax-1 {
   background-image: url("../images/hero-bg.jpg");
   min-height: 800px;
@@ -5,7 +9,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+height: auto;
   text-align: center;
 }
 
@@ -38,20 +42,6 @@ body {
 
 }
 
-@media (min-width: 992px){
-.container{
-        width: 970px;
- }
- .col-md-offset-2{
-        margin-left: 16.66%;
- }
- .col-md-8 {
-  width: 66.66%;
- }
- .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-    float: left;
-}
-}
   .hero {
   position: absolute;
   
@@ -75,7 +65,7 @@ body {
 
 }
 .sidenav {
-    height: 32%;
+    height: 22%;
     width: 0;
     position: fixed;
     z-index: 1;
@@ -86,6 +76,7 @@ body {
     transition: 0.5s;
     padding-top: 8px;
     text-align:center;
+
 }
 
 .sidenav a {
@@ -109,12 +100,6 @@ body {
     font-size: 36px;
     margin-left: 50px;
 }
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
 
 
 
@@ -682,6 +667,17 @@ footer {
  .credit {
   text-align: right;
  }
+
+ @media (max-width: 600px) and (orientation: portrait) {
+  .sidenav {
+    height: 13%;
+    width: 100%;
+    float: none;
+    background-color: red;
+    display: inherit !important;
+
+  }
+}
 
 
 
