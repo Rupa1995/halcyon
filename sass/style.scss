@@ -122,10 +122,22 @@ span{
          font-weight: 90px;
          }
       }
+       @media only screen and (max-width: 550px){
+          .nav{
+            float: left;
+            padding-top: 2%;
+            padding-left: 5%;
+          }
+          .nav span{
+            font-size: 30px;
+            cursor:pointer;
+            font-weight: 90px;
+          }
+         }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .sidenav{
-  height: 32%;
+  height: 33%;
   width: 0;
   position: fixed;
   z-index: 1;
@@ -156,23 +168,13 @@ span{
     font-size: 36px;
     margin-left: 50px;
   }
-}
-  @media screen and (max-width: 600px){
-
-    .sidenav{
-  height: 13%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #3e3e3e;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 8px;
-  text-align: center;
+   @media only screen and (max-width: 550px){
+    .sidenav {
+      height: 13%;
+    }
   }
 }
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .float-right{
   display: inline-block;
@@ -199,8 +201,9 @@ span{
   padding-top: 1.6%;
   padding-right: 6.4%;
   padding-left: 6%;
-  padding-bottom: 7.99%;
+  padding-bottom: 0%;
   text-align: center;
+  margin-bottom: 50px;
 
   a {
     color: black;
@@ -254,13 +257,15 @@ span{
 
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
+.section-padding{
+  padding: 0 0 0;
+}
 
 .intro2{
-  padding-top: 20px;
+  padding-top: 0px;
   padding-right: 50px;
   padding-left: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
   text-align: center;
 
   h1{
