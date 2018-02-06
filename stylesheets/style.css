@@ -10,7 +10,7 @@
   text-align: center;
 }
 
-/* line 16, ../sass/style.scss */
+/* line 17, ../sass/style.scss */
 .bg-parallax-2 {
   background-image: url("../images/iphone-bg.png");
   min-height: 636px;
@@ -20,7 +20,7 @@
   text-align: center;
 }
 
-/* line 27, ../sass/style.scss */
+/* line 26, ../sass/style.scss */
 .bg-parallax-3 {
   background-image: url("../images/plants-bg.jpg");
   min-height: 300px;
@@ -32,17 +32,26 @@
   background-attachment: fixed;
 }
 
-/* line 37, ../sass/style.scss */
+/* line 38, ../sass/style.scss */
 html body {
   width: 100%;
 }
 
-/* line 40, ../sass/style.scss */
+/* line 42, ../sass/style.scss */
 body {
   overflow-x: hidden;
 }
 
 /* line 45, ../sass/style.scss */
+p {
+  display: block;
+  font-family: "Varela Round", sans-serif;
+  color: #8c9398;
+  padding-bottom: 60px;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* line 52, ../sass/style.scss */
 .hero {
   position: absolute;
   top: 25%;
@@ -50,88 +59,32 @@ body {
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
-
-/* line 53, ../sass/style.scss */
-.inner {
+/* line 59, ../sass/style.scss */
+.hero h1 {
+  font-size: 40px;
+  letter-spacing: 12px;
+  margin: 10px;
+  color: #353535;
+  font-family: "Varela Round", sans-serif;
+}
+/* line 66, ../sass/style.scss */
+.hero p {
+  display: block;
+  font-family: "Varela Round", sans-serif;
+  color: #8c9398;
+  padding-bottom: 60px;
+}
+/* line 72, ../sass/style.scss */
+.hero .inner {
   padding-top: 390px;
 }
-
-/* line 56, ../sass/style.scss */
-.nav {
-  float: right;
-  padding-top: 6.2%;
-  padding-right: 10%;
-}
-
-/* line 61, ../sass/style.scss */
-#navicon {
-  font-size: 40px;
-  cursor: pointer;
-  font-weight: 90px;
-}
-
-/* line 67, ../sass/style.scss */
-.sidenav {
-  height: 22%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 8px;
-  text-align: center;
-}
-
-/* line 82, ../sass/style.scss */
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 15px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-/* line 92, ../sass/style.scss */
-.sidenav a:hover {
-  color: #eee;
-}
-
-/* line 96, ../sass/style.scss */
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-/* line 22, ../sass/style.scss */
-/* line 30, ../sass/style.scss */
-/* line 111, ../sass/style.scss */
-.float-right {
+/* line 75, ../sass/style.scss */
+.hero span {
+  color: #a1a9b0;
   display: inline-block;
-  cursor: pointer;
-  position: absolute;
-  padding-right: 100px;
-  padding-top: 100px;
-  padding-left: 350px;
-  padding-bottom: 500px;
 }
-
-/* line 121, ../sass/style.scss */
-.indicator {
-  position: absolute;
-  right: 0 !important;
-}
-
-/* line 40, ../sass/style.scss */
-/* line 62, ../sass/style.scss */
-/* line 129, ../sass/style.scss */
-.button {
+/* line 80, ../sass/style.scss */
+.hero .button {
   display: inline-block;
   padding: 20px 40px;
   font-size: 13px;
@@ -151,39 +104,99 @@ body {
   font-family: "Varela Round", sans-serif;
 }
 
-/* line 83, ../sass/style.scss */
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* line 101, ../sass/style.scss */
+.nav {
+  float: right;
+  padding-top: 6.2%;
+  padding-right: 10%;
+}
+/* line 106, ../sass/style.scss */
+.nav span {
+  font-size: 40px;
+  cursor: pointer;
+  font-weight: 90px;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* line 114, ../sass/style.scss */
+.sidenav {
+  height: 22%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #3e3e3e;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 8px;
+  text-align: center;
+}
+/* line 126, ../sass/style.scss */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+/* line 134, ../sass/style.scss */
+.sidenav a:hover {
+  color: #eee;
+}
+@media screen and (max-width: 600px) {
+  /* line 114, ../sass/style.scss */
+  .sidenav {
+    height: 13%;
+  }
+}
+/* line 141, ../sass/style.scss */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* line 150, ../sass/style.scss */
+.float-right {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  padding-right: 100px;
+  padding-top: 100px;
+  padding-left: 350px;
+  padding-bottom: 500px;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* line 161, ../sass/style.scss */
+.indicator {
+  position: absolute;
+  right: 0 !important;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* line 170, ../sass/style.scss */
 #intro {
   background-color: whitesmoke;
   padding-top: 1.6%;
   padding-right: 6.4%;
-  padding-left: 24%;
+  padding-left: 21%;
   padding-bottom: 7.99%;
   text-align: center;
 }
-
-/* line 92, ../sass/style.scss */
-/* line 160, ../sass/style.scss */
-.fadeInDown {
-  font-size: 40px;
-  letter-spacing: 12px;
-  margin: 10px;
-  color: #353535;
+/* line 178, ../sass/style.scss */
+#intro a {
+  color: black;
   font-family: "Varela Round", sans-serif;
 }
-
-/* line 101, ../sass/style.scss */
-/* line 169, ../sass/style.scss */
-.fadeInUp {
-  display: block;
-  font-family: "Varela Round", sans-serif;
-  color: #8c9398;
-  padding-bottom: 60px;
-}
-
-/* line 108, ../sass/style.scss */
-/* line 177, ../sass/style.scss */
-#h1, #h2 {
+/* line 182, ../sass/style.scss */
+#intro h1 {
   font-size: 15px;
   text-transform: uppercase;
   color: #353535;
@@ -194,30 +207,16 @@ body {
   font-family: "Varela Round", sans-serif;
 }
 
-/* line 119, ../sass/style.scss */
-/* line 189, ../sass/style.scss */
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* line 200, ../sass/style.scss */
 .blockquote {
   color: #8c9398;
   font-family: "Varela Round", sans-serif;
   font-size: 15px;
 }
 
-/* line 125, ../sass/style.scss */
-/* line 196, ../sass/style.scss */
-#a1 {
-  color: black;
-  font-family: "Varela Round", sans-serif;
-}
-
-/* line 130, ../sass/style.scss */
-/* line 202, ../sass/style.scss */
-#s1 {
-  color: #a1a9b0;
-  display: inline-block;
-}
-
-/* line 135, ../sass/style.scss */
-/* line 208, ../sass/style.scss */
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* line 211, ../sass/style.scss */
 .intro2 {
   padding-top: 20px;
   padding-right: 100px;
@@ -225,10 +224,26 @@ body {
   padding-bottom: 50px;
   text-align: center;
 }
-
-/* line 144, ../sass/style.scss */
-/* line 217, ../sass/style.scss */
-.icon {
+/* line 218, ../sass/style.scss */
+.intro2 h1 {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #353535;
+  letter-spacing: 1px;
+  padding-top: 80px;
+  padding-bottom: 3px;
+  font-weight: bold;
+  font-family: "Varela Round", sans-serif;
+}
+/* line 229, ../sass/style.scss */
+.intro2 h6 {
+  color: #353535;
+  font-family: "Varela Round", sans-serif;
+  font-size: 15px;
+  padding-top: 20px;
+}
+/* line 236, ../sass/style.scss */
+.intro2 .icon {
   height: 175px;
   width: 175px;
   line-height: 175px;
@@ -247,24 +262,15 @@ body {
   box-sizing: border-box;
 }
 
-/* line 163, ../sass/style.scss */
-/* line 237, ../sass/style.scss */
-#a2 {
-  color: #353535;
-  font-family: "Varela Round", sans-serif;
-  font-size: 15px;
-  padding-top: 20px;
-}
-
-/* line 169, ../sass/style.scss */
-/* line 245, ../sass/style.scss */
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* line 258, ../sass/style.scss */
 .responsive {
   width: 980px;
   height: 650px;
 }
 
-/* line 174, ../sass/style.scss */
-/* line 251, ../sass/style.scss */
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* line 264, ../sass/style.scss */
 .leftHalf {
   background-repeat: no-repeat;
   background-position: center;
@@ -274,8 +280,8 @@ body {
   height: 100%;
 }
 
-/* line 183, ../sass/style.scss */
-/* line 261, ../sass/style.scss */
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* line 274, ../sass/style.scss */
 p {
   color: #8c9398;
   word-spacing: 1px;
@@ -286,7 +292,8 @@ p {
   padding-right: 0%;
 }
 
-/* line 270, ../sass/style.scss */
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* line 284, ../sass/style.scss */
 .myCarousel {
   text-align: center;
   background-color: #fff;
@@ -298,34 +305,51 @@ p {
   display: block;
   overflow: hidden;
 }
+/* line 294, ../sass/style.scss */
+.myCarousel img {
+  padding-left: 265px;
+}
+/* line 297, ../sass/style.scss */
+.myCarousel h1 {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #353535;
+  letter-spacing: 1px;
+  padding-top: 80px;
+  padding-bottom: 3px;
+  font-weight: bold;
+  font-family: "Varela Round", sans-serif;
+}
 
-/* line 281, ../sass/style.scss */
-.carousel-control.left,
-.carousel-control.right {
+/* line 310, ../sass/style.scss */
+.carousel-control {
+  width: 50%;
+}
+/* line 313, ../sass/style.scss */
+.carousel-control.left, .carousel-control.right {
   background-image: none;
 }
 
-/* line 286, ../sass/style.scss */
+/* line 319, ../sass/style.scss */
 .cursor-icons {
   display: none;
 }
 
-/* line 290, ../sass/style.scss */
+/* line 325, ../sass/style.scss */
 .carousel-control {
   width: 50%;
 }
 
-/* line 294, ../sass/style.scss */
+/* line 332, ../sass/style.scss */
 .carousel .right:hover {
   cursor: url("http://johnuberbacher.com/projects/codepen/arrow-right.png"), default !important;
 }
-
-/* line 298, ../sass/style.scss */
+/* line 335, ../sass/style.scss */
 .carousel .left:hover {
   cursor: url("http://johnuberbacher.com/projects/codepen/arrow-left.png"), default !important;
 }
 
-/* line 302, ../sass/style.scss */
+/* line 342, ../sass/style.scss */
 .carousel-indicators li {
   margin-top: 100px;
   border-radius: 13px;
@@ -335,45 +359,41 @@ p {
   font-weight: 800;
   color: black;
   border: 3px solid #A9A9A9;
+  bottom: 50px;
+}
+@media screen and (min-width: 992px) {
+  /* line 341, ../sass/style.scss */
+  .carousel-indicators {
+    bottom: 0px;
+  }
 }
 
-/* line 313, ../sass/style.scss */
-.carousel-indicators {
-  bottom: -50px;
-}
-
-/* line 318, ../sass/style.scss */
+/* line 357, ../sass/style.scss */
 ol.carousel-indicators li.active {
   height: 13px;
   width: 13px;
   background-color: black;
 }
 
-/* line 324, ../sass/style.scss */
+/* line 364, ../sass/style.scss */
 #carsl {
   padding-left: 100px;
   padding-right: 100px;
 }
 
-/* line 205, ../sass/style.scss */
-/* line 331, ../sass/style.scss */
-#h3 {
-  padding-left: 230px;
-}
-
-/* line 208, ../sass/style.scss */
-/* line 336, ../sass/style.scss */
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* line 373, ../sass/style.scss */
 hr {
   display: block;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   margin-left: 43.9%;
-  margin-right: 45.9%;
+  margin-right: 43.9%;
   border-top: 4px solid #3dc9b3;
 }
 
-/* line 218, ../sass/style.scss */
-/* line 346, ../sass/style.scss */
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* line 382, ../sass/style.scss */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -386,16 +406,14 @@ hr {
   box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
   transition: background-color 0.6s ease;
 }
-
-/* line 230, ../sass/style.scss */
-/* line 360, ../sass/style.scss */
+/* line 394, ../sass/style.scss */
 .dot:hover {
   background-color: #000;
 }
 
-/* line 234, ../sass/style.scss */
-/* line 365, ../sass/style.scss */
-#paralx {
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* line 400, ../sass/style.scss */
+.paralx {
   background-image: url("../images/plants-bg.jpg");
   min-height: 300px;
   background-attachment: fixed;
@@ -404,9 +422,33 @@ hr {
   background-size: cover;
   text-align: center;
 }
+/* line 409, ../sass/style.scss */
+.paralx #swag {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-right: 5px;
+  font-family: "Varela Round", sans-serif;
+  color: white;
+  letter-spacing: 5px;
+  font-size: 37px;
+}
+/* line 418, ../sass/style.scss */
+.paralx #swag #spn {
+  padding-top: 15px;
+  font-size: 25px;
+  color: white;
+  padding-bottom: 10px;
+}
+/* line 427, ../sass/style.scss */
+.paralx #spn1 {
+  font-size: 36px;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
 
-/* line 244, ../sass/style.scss */
-/* line 376, ../sass/style.scss */
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* line 436, ../sass/style.scss */
 #text1 {
   padding-top: 20px;
   font-size: 60px;
@@ -416,34 +458,27 @@ hr {
   font-family: "Varela Round", sans-serif;
 }
 
-/* line 252, ../sass/style.scss */
-/* line 386, ../sass/style.scss */
+/* line 446, ../sass/style.scss */
 .swag {
   width: 500px;
 }
 
-/* line 264, ../sass/style.scss */
-/* line 393, ../sass/style.scss */
-#swag {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  padding-right: 0px;
+/* line 450, ../sass/style.scss */
+#a2 {
+  color: #353535;
   font-family: "Varela Round", sans-serif;
-  color: white;
-  letter-spacing: 5px;
-  font-size: 37px;
+  font-size: 15px;
+  padding-top: 20px;
 }
 
-/* line 274, ../sass/style.scss */
-/* line 405, ../sass/style.scss */
+/* line 458, ../sass/style.scss */
 #spn {
   padding-top: 15px;
   font-size: 25px;
   color: white;
 }
 
-/* line 279, ../sass/style.scss */
-/* line 412, ../sass/style.scss */
+/* line 464, ../sass/style.scss */
 .dwn-btn {
   padding-right: 2px;
   padding-left: 2px;
@@ -458,15 +493,13 @@ hr {
   text-align: center;
   border-radius: 50%;
 }
-
-/* line 430, ../sass/style.scss */
+/* line 477, ../sass/style.scss */
 .dwn-btn:hover {
   background-color: #3dc9b3;
   color: #fff;
 }
 
-/* line 285, ../sass/style.scss */
-/* line 435, ../sass/style.scss */
+/* line 484, ../sass/style.scss */
 .image {
   width: 100%;
   display: block;
@@ -475,35 +508,15 @@ hr {
   padding-bottom: 50px;
 }
 
-/* line 293, ../sass/style.scss */
-/* line 444, ../sass/style.scss */
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(100, 194, 158, 0.8);
-  overflow: hidden;
-  width: 0;
-  height: 100%;
-  transition: 0.5s ease;
-}
-
-/* line 455, ../sass/style.scss */
-.image:hover .overlay {
-  width: 100%;
-}
-
-/* line 297, ../sass/style.scss */
-/* line 460, ../sass/style.scss */
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* line 492, ../sass/style.scss */
 .ignite {
   background-color: #242830;
   padding: 70px 0;
   text-align: center;
 }
 
-/* line 302, ../sass/style.scss */
-/* line 467, ../sass/style.scss */
+/* line 498, ../sass/style.scss */
 .ignite-btn {
   display: inline-block;
   padding: 25px 40px;
@@ -513,34 +526,36 @@ hr {
   font-weight: bold;
   letter-spacing: 1px;
 }
-
-/* line 310, ../sass/style.scss */
-/* line 478, ../sass/style.scss */
-html, html a {
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-}
-
-/* line 313, ../sass/style.scss */
-/* line 483, ../sass/style.scss */
-a {
-  transition: all 0.5s;
-  text-decoration: none;
-}
-
-/* line 318, ../sass/style.scss */
-/* line 489, ../sass/style.scss */
+/* line 507, ../sass/style.scss */
 .ignite-btn:hover {
   color: #3dc9b3;
   border-color: #3dc9b3;
   text-decoration: none;
 }
 
-/* line 494, ../sass/style.scss */
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* line 514, ../sass/style.scss */
+html {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+/* line 516, ../sass/style.scss */
+html a {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+/* line 521, ../sass/style.scss */
+a {
+  transition: all 0.5s;
+  text-decoration: none;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* line 526, ../sass/style.scss */
 .social {
   margin-top: 25px;
 }
 
-/* line 497, ../sass/style.scss */
+/* line 531, ../sass/style.scss */
 ul#social-button {
   list-style: none;
   margin: 0;
@@ -548,7 +563,7 @@ ul#social-button {
   list-style-type: none;
 }
 
-/* line 505, ../sass/style.scss */
+/* line 538, ../sass/style.scss */
 .social-btn {
   width: 40px;
   height: 40px;
@@ -563,20 +578,41 @@ ul#social-button {
   box-sizing: border-box;
   display: inline-block;
 }
-
-/* line 521, ../sass/style.scss */
+/* line 551, ../sass/style.scss */
 .social-btn:hover {
   background-color: #3dc9b3;
   color: #fff;
 }
 
-/* line 526, ../sass/style.scss */
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* line 559, ../sass/style.scss */
+#team h1 {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #353535;
+  letter-spacing: 1px;
+  padding-top: 80px;
+  padding-bottom: 3px;
+  font-weight: bold;
+  font-family: "Varela Round", sans-serif;
+}
+
+/* line 571, ../sass/style.scss */
 .section-padding {
   padding: 0 0 100px;
 }
 
-/* line 529, ../sass/style.scss */
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* line 575, ../sass/style.scss */
+#subsc {
+  padding-top: 110px;
+  padding-bottom: 60px;
+}
+
+/* line 580, ../sass/style.scss */
 .subscribe {
+  padding-top: 110px;
+  padding-bottom: 80px;
   background-image: url("../images/keyboard-bg.jpg");
   min-height: 400px;
   background-attachment: fixed;
@@ -585,14 +621,7 @@ ul#social-button {
   background-size: cover;
   text-align: center;
 }
-
-/* line 540, ../sass/style.scss */
-#subsc {
-  padding-top: 110px;
-  padding-bottom: 60px;
-}
-
-/* line 544, ../sass/style.scss */
+/* line 591, ../sass/style.scss */
 .subscribe h1 {
   margin-top: 20px;
   display: inline-block;
@@ -606,15 +635,13 @@ ul#social-button {
   letter-spacing: 1px;
   margin-bottom: 40px;
 }
-
-/* line 557, ../sass/style.scss */
+/* line 604, ../sass/style.scss */
 .subscribe i {
   display: inline-block;
   font-size: 2em;
   margin-bottom: 20px;
 }
-
-/* line 562, ../sass/style.scss */
+/* line 610, ../sass/style.scss */
 .subscribe input[type=text] {
   background-color: rgba(255, 255, 255, 0.1);
   border: solid 1px;
@@ -626,8 +653,7 @@ ul#social-button {
   vertical-align: baseline;
   font-family: "Varela Round", sans-serif;
 }
-
-/* line 574, ../sass/style.scss */
+/* line 621, ../sass/style.scss */
 .subscribe input[type=submit] {
   background-color: rgba(61, 201, 179, 0.5);
   border: solid 1px;
@@ -640,13 +666,13 @@ ul#social-button {
   line-height: normal;
   font-family: "Varela Round", sans-serif;
 }
-
-/* line 586, ../sass/style.scss */
-.subscribe input[type=submit]:hover {
+/* line 633, ../sass/style.scss */
+.subscribe input:hover {
   background-color: #3dc9b3;
 }
 
-/* line 589, ../sass/style.scss */
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* line 639, ../sass/style.scss */
 .up-btn {
   width: 50px;
   height: 50px;
@@ -661,15 +687,18 @@ ul#social-button {
   top: -26px;
   position: relative;
 }
-
-/* line 603, ../sass/style.scss */
+/* line 652, ../sass/style.scss */
 .up-btn:hover {
   background-color: #3dc9b3;
   color: white;
 }
 
-/* line 607, ../sass/style.scss */
-#drop {
+/* line 658, ../sass/style.scss */
+.contact {
+  background-color: whitesmoke;
+}
+/* line 662, ../sass/style.scss */
+.contact h1 {
   font-size: 15px;
   text-transform: uppercase;
   color: #353535;
@@ -679,26 +708,8 @@ ul#social-button {
   font-weight: bold;
   font-family: "Varela Round", sans-serif;
 }
-
-/* line 617, ../sass/style.scss */
-#contct {
-  background-color: whitesmoke;
-}
-
-/* line 621, ../sass/style.scss */
-.light-box {
-  background-color: #fff;
-  text-align: center;
-  padding-bottom: 20px;
-}
-
-/* line 628, ../sass/style.scss */
-.contact-details {
-  margin: 50px 0;
-}
-
-/* line 631, ../sass/style.scss */
-#cntct {
+/* line 673, ../sass/style.scss */
+.contact h2 {
   font-size: 14px;
   text-transform: uppercase;
   color: #3dc9b3;
@@ -708,64 +719,53 @@ ul#social-button {
   font-weight: bold;
   font-family: "Varela Round", sans-serif;
 }
+/* line 685, ../sass/style.scss */
+.contact .light-box {
+  background-color: #fff;
+  text-align: center;
+}
 
-/* line 641, ../sass/style.scss */
+/* line 692, ../sass/style.scss */
+.contact-details {
+  margin: 50px 0;
+}
+
+/* line 696, ../sass/style.scss */
 #fa-i {
   color: black;
   padding-bottom: 15px;
   font-size: 20px;
 }
 
-/* line 647, ../sass/style.scss */
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* line 703, ../sass/style.scss */
 footer {
   background-color: #242830;
   padding: 40px 0 30px;
 }
-
-/* line 653, ../sass/style.scss */
-.legals {
-  text-align: left;
-}
-
-/* line 656, ../sass/style.scss */
+/* line 706, ../sass/style.scss */
 footer a {
   color: #a1a9b0;
 }
-
-/* line 659, ../sass/style.scss */
+/* line 708, ../sass/style.scss */
 footer a:hover {
   color: #3dc9b3;
   text-decoration: none;
 }
-
-/* line 663, ../sass/style.scss */
+/* line 713, ../sass/style.scss */
 footer p {
   color: #fff;
   font-family: "Varela Round", sans-serif;
 }
 
-/* line 667, ../sass/style.scss */
+/* line 719, ../sass/style.scss */
+.legals {
+  text-align: left;
+}
+
+/* line 722, ../sass/style.scss */
 .credit {
   text-align: right;
 }
 
-@media (max-width: 600px) and (orientation: portrait) {
-  /* line 672, ../sass/style.scss */
-  .sidenav {
-    height: 13%;
-    width: 100%;
-    float: none;
-    background-color: red;
-    display: inherit !important;
-  }
-
-  /* line 680, ../sass/style.scss */
-  p {
-    font-size: 20px;
-  }
-
-  /* line 683, ../sass/style.scss */
-  body {
-    font-size: 21px;
-  }
-}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
