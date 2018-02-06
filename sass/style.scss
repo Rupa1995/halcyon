@@ -118,7 +118,7 @@ span{
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .sidenav{
-  height: 22%;
+  height: 32%;
   width: 0;
   position: fixed;
   z-index: 1;
@@ -141,15 +141,29 @@ span{
       color: #eee;
     }
   }
-  @media screen and (max-width: 600px){
-    height: 13%;
-  }
+
   .closebtn{
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+  }
+}
+  @media screen and (max-width: 600px){
+
+    .sidenav{
+  height: 13%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #3e3e3e;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 8px;
+  text-align: center;
   }
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -194,6 +208,25 @@ span{
       padding-bottom: 3px;
       font-weight: bold;
       font-family: "Varela Round", sans-serif;
+   }
+
+   @media only screen and (max-width: 550px){
+    #intro{
+      padding-right: 0px;
+      padding-left: 0px;
+      text-align: center;
+      padding-top: 1%;
+      padding-bottom: 1%;
+    }
+    #intro img {
+      size: 50%;
+    }
+    .container {
+       padding-right: 0px;
+      padding-left: 0px;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
    }
 }
 
@@ -298,11 +331,7 @@ p{
   display: block;
   overflow: hidden;
 
-  @media screen and (max-width: 768px){
-  
-    width: 100%;
-  
-}
+
 
   img{
       padding-left: 265px;
@@ -317,6 +346,7 @@ p{
       font-weight: bold;
       font-family: "Varela Round", sans-serif;
    }
+
 }
 
 
