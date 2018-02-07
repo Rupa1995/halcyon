@@ -122,18 +122,7 @@ span{
          font-weight: 90px;
          }
       }
-       @media only screen and (max-width: 550px){
-          .nav{
-            float: left;
-            padding-top: 2%;
-            padding-left: 5%;
-          }
-          .nav span{
-            font-size: 30px;
-            cursor:pointer;
-            font-weight: 90px;
-          }
-         }
+      
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .sidenav{
@@ -168,11 +157,7 @@ span{
     font-size: 36px;
     margin-left: 50px;
   }
-   @media only screen and (max-width: 550px){
-    .sidenav {
-      height: 13%;
-    }
-  }
+ 
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -347,9 +332,7 @@ p{
 
 
 
-  img{
-      padding-left: 240px;
-   }
+ 
     h1{
       font-size: 15px;
       text-transform: uppercase;
@@ -363,14 +346,19 @@ p{
    
 
 }
-@media screen and (max-width: 550px){
+@media screen and (max-width: 480px){
 .myCarousel {
     width: 100%;
       
   }
-  .myCarousel img{
-      padding-left: 50px;
+ 
+}
+@media screen and (min-width: 481px) and (max-width: 767px){
+.myCarousel {
+    width: 100%;
+      
   }
+ 
 }
 
 .carousel-control{
