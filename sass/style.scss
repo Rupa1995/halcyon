@@ -4,7 +4,7 @@
 
 .bg-parallax-1{
   background-image: url("../images/hero-bg.jpg");
-  min-height: 800px;
+  min-height: 600px;
   width: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -16,7 +16,7 @@
 
 .bg-parallax-2{
   background-image: url("../images/iphone-bg.png");
-  min-height: 636px;
+  min-height: 600px;
   margin-right: 397px;
   background-position: left;
   background-repeat: no-repeat;
@@ -58,7 +58,7 @@ body{
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .hero{
   position: absolute;
-  top: 30%;
+  top: 67%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -76,9 +76,7 @@ body{
     color: #8c9398;
     padding-bottom: 60px;
     }
-  .inner{
-    padding-top: 390px;
-    }
+  
 span{
   color: #a1a9b0;
   display: inline-block;
@@ -108,13 +106,20 @@ span{
     .col-md-12 {
       font-size: 60px;
     }
+    .hero {
+      top: 70%;
+    }
   }
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .nav{
-       float: right;
+       /*float: right;
        padding-top: 6.2%;
-       padding-right: 10%;
+       padding-right: 10%;*/
+       position: absolute;
+       width: 60px;
+       top: 11%;
+       right: 8%;
 
        span{
          font-size: 40px;
@@ -122,11 +127,11 @@ span{
          font-weight: 90px;
          }
       }
-      
+     
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .sidenav{
-  height: 33%;
+  height: 27%;
   width: 0;
   position: fixed;
   z-index: 1;
@@ -135,12 +140,12 @@ span{
   background-color: #3e3e3e;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 8px;
+  padding-top: 17px;
   text-align: center;
   a{
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 20px;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -157,7 +162,11 @@ span{
     font-size: 36px;
     margin-left: 50px;
   }
- 
+  @media only screen and (max-width: 550px){
+    .sidenav {
+      height: 13%;
+    }
+  }
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
