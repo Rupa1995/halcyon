@@ -16,7 +16,7 @@
 
 .bg-parallax-2{
   background-image: url("../images/iphone-bg.png");
-  min-height: 600px;
+  min-height: 520px;
   margin-right: 397px;
   background-position: left;
   background-repeat: no-repeat;
@@ -58,7 +58,7 @@ body{
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .hero{
   position: absolute;
-  top: 67%;
+  top: 60%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -137,7 +137,7 @@ span{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #a1a9b0;
+  background-color: #ddd;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 18px;
@@ -192,7 +192,7 @@ span{
 
 #intro{
   background-color: whitesmoke;
-  padding-top: 1.6%;
+  padding-top: 2%;
   padding-right: 6.4%;
   padding-left: 6%;
   padding-bottom: 0%;
@@ -208,8 +208,7 @@ span{
       text-transform: uppercase;
       color: #353535;
       letter-spacing: 1px;
-      padding-top: 80px;
-      padding-bottom: 3px;
+      
       font-weight: bold;
       font-family: "Varela Round", sans-serif;
    }
@@ -256,10 +255,10 @@ span{
 }
 
 .intro2{
-  padding-top: 0px;
+ 
   padding-right: 50px;
   padding-left: 50px;
-  padding-bottom: 0px;
+  padding-bottom: 10px;
   text-align: center;
 
   h1{
@@ -267,8 +266,7 @@ span{
       text-transform: uppercase;
       color: #353535;
       letter-spacing: 1px;
-      padding-top: 80px;
-      padding-bottom: 3px;
+     
       font-weight: bold;
       font-family: "Varela Round", sans-serif;
    }
@@ -330,11 +328,11 @@ p{
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .myCarousel{
   text-align: center;
-  background-color: #fff;
+  background-color: #fbfbfb;
   position: absolute;
   width: 54.2%;
   right: 0px;
-  height: 600px;
+  height: 520px;
   float: right;
   display: block;
   overflow: hidden;
@@ -727,8 +725,8 @@ ul#social-button{
   text-transform: uppercase;
   color: #353535;
   letter-spacing: 1px;
-  padding-top: 30px;
-  padding-bottom: 3px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   font-weight: bold;
   font-family: "Varela Round", sans-serif;
 }
@@ -753,12 +751,12 @@ h2{
 }
 
 .contact-details{
-  margin: 50px 0;
+  margin: 20px 0;
 }
 
 #fa-i{
   color: black;
-  padding-bottom: 15px;
+  padding-bottom: 0px;
   font-size: 20px;
 
 }
