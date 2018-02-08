@@ -1,10 +1,31 @@
-
-
-
+$font-style:"Varela Round", sans-serif;
+$font1: 13px;
+$font2: 40px;
+$font3: 15px;
+$font4: 60px;
+$font5: 25px;
+$font6: 36px;
+$whitesmoke: whitesmoke;
+$black: black;
+$faded-gray: #a1a0b014;
+$light-gray: #8c9398;
+$gray: #a1a9b0;
+$dark-gray: #A9A9A9;
+$greenish-blue: #3dc9b3;
+$black: #353535;
+$white: #fff;
+$dark-black: #242830;
+$dark-greenish-blue: #309383;
+$red-gray: #ddd;
+$light-green: #36c0a4;
+$fade-green: #12c0a4;
+$greenish-blue-op: rgba(61, 201, 179, 0.5);
+$trans-gray: rgba(255, 255, 255, 0.1);
+$shadow: rgba(0, 0, 0, 0.004);
 
 .bg-parallax-1{
   background-image: url("../images/hero-bg.jpg");
-  min-height: 600px;
+  min-height: 700px;
   width: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,16 +38,22 @@
 
 .bg-parallax-2{
   background-image: url("../images/iphone-bg.png");
-  min-height: 520px;
+  min-height: 650px;
   margin-right: 397px;
   background-position: left;
   background-repeat: no-repeat;
   text-align: center;
+  background-color: $faded-gray;
+
 }
 @media only screen and (max-width: 550px)
 {
   .bg-parallax-2{
     backface-visibility: hidden;
+  }
+  .bg-parallax-1{
+    min-height: 540px;
+
   }
   
 }
@@ -52,10 +79,16 @@ body{
 }
  p {
     display: block;
-    font-family: "Varela Round", sans-serif;
-    color: #8c9398;
-    padding-bottom: 60px;
-    }
+    font-family: $font-style;
+    color: $light-gray;
+    padding-bottom: 0px;
+    
+  word-spacing: 1px;
+  line-height: 25px;
+  font-size: $font1;
+  margin: 1em 0;
+  
+}
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .hero{
   position: absolute;
@@ -63,52 +96,51 @@ body{
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+ 
 
   h1 {
-        font-size: 40px;
+        font-size: $font2;
         letter-spacing: 12px;
         margin: 10px;
-        color: #353535;
-        font-family: "Varela Round", sans-serif;
+        color: $black;
+        font-family: $font-style;
       }
  p {
     display: block;
-    font-family: "Varela Round", sans-serif;
-    color: #8c9398;
+    font-family: $font-style;
+    color: $light-gray;
     padding-bottom: 60px;
     }
   
 span{
-  color: #a1a9b0;
+  color: $gray;
   display: inline-block;
   }
 
 .button{
     display: inline-block;
     padding: 20px 40px;
-    font-size: 13px;
+    font-size: $font1;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
     outline: none;
-    color: #fff;
-    background-color: #3dc9b3;
+    color: $white;
+    background-color: $greenish-blue;
     border: none;
     border-radius: 5px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
     box-sizing: border-box;
-    box-shadow: 0px 3px 0px 0px #309383;
-    font-family: "Varela Round", sans-serif;
+    box-shadow: 0px 3px 0px 0px $dark-greenish-blue;
+    font-family: $font-style;
   }
 
   @media only screen and (max-width: 550px){
     .col-md-12 {
       font-size: 60px;
-    }
-    .hero {
-      top: 70%;
+
     }
   }
 }
@@ -123,13 +155,17 @@ span{
        right: 8%;
 
        span{
-         font-size: 40px;
+         font-size: $font2;
          cursor: pointer;
          font-weight: 90px;
          }
       }
-     
-
+@media only screen and (max-width: 550px){
+  .nav{
+    top: 7%;
+    right: 4%;
+  }
+}
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .sidenav{
   height: 36%;
@@ -138,7 +174,7 @@ span{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #ddd;
+  background-color: $red-gray;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 18px;
@@ -146,13 +182,13 @@ span{
   a{
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 15px;
-    color: #818181;
+    font-size: $font3;
+    color: $gray;
     display: block;
     transition: 0.3s;
 
     &:hover{
-      color: #eee;
+      color: $dark-black;
     }
   }
 
@@ -160,7 +196,7 @@ span{
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
+    font-size: $font2;
     margin-left: 50px;
   }
   @media only screen and (max-width: 550px){
@@ -169,91 +205,44 @@ span{
     }
   }
 }
-
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-.float-right{
-  display: inline-block;
-  cursor: pointer;
-  position: absolute;
-  padding-right: 100px;
-  padding-top: 100px;
-  padding-left: 350px;
-  padding-bottom: 500px;
-
-}
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-.indicator{
-  position: absolute;
-  right: 0 !important;
-}
-
-
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-
 #intro{
-  background-color: whitesmoke;
-  padding-top: 2%;
+  background-color: $whitesmoke;
+  padding-top: 8%;
   padding-right: 6.4%;
-  padding-left: 6%;
-  padding-bottom: 0%;
+  padding-left: 5%;
+  padding-bottom: 8%;
   text-align: center;
   margin-bottom: 50px;
 
   a {
     color: black;
-    font-family: "Varela Round", sans-serif;
+    font-family: $font-style;
   }
    h1{
-      font-size: 15px;
+      font-size: $font3;
       text-transform: uppercase;
-      color: #353535;
+      color: $black;
       letter-spacing: 1px;
       
       font-weight: bold;
-      font-family: "Varela Round", sans-serif;
+      font-family: $font-style;
    }
 
-   @media only screen and (max-width: 550px){
-    #intro{
-      padding-right: 0px;
-      padding-left: 0px;
+   @media (min-width: 990px){
+    p{
+      padding-right: 100px;
+      padding-left: 100px;
       text-align: center;
       padding-top: 1%;
       padding-bottom: 1%;
     }
-    #intro img {
-      size: 50%;
-    }
-    .container {
-       padding-right: 0px;
-      padding-left: 0px;
-      margin-right: 0px;
-      margin-left: 0px;
-    }
+    
    }
-
-
-}
-
-
-
+ }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
-
-.blockquote{
-  color: #8c9398;
-  font-family: "Varela Round", sans-serif;
-  font-size: 15px;
-}
-
-
-
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-.section-padding{
-  padding: 0 0 0;
-}
 
 .intro2{
  
@@ -263,19 +252,19 @@ span{
   text-align: center;
 
   h1{
-      font-size: 15px;
+      font-size: $font3;
       text-transform: uppercase;
-      color: #353535;
+      color: $black;
       letter-spacing: 1px;
      
       font-weight: bold;
-      font-family: "Varela Round", sans-serif;
+      font-family: $font-style;
    }
 
    h6{
-        color: #353535;
-        font-family: "Varela Round", sans-serif;
-        font-size: 15px;
+        color: $black;
+        font-family: $font-style;
+        font-size: $font3;
         padding-top: 20px;
       }
 
@@ -284,14 +273,14 @@ span{
         width: 175px;
         line-height: 175px;
         max-width: 150%;
-        background-color: #3dc9b3;
+        background-color: $greenish-blue;
         border-radius: 100%;
         display: block;
         overflow: hidden;
-        color: #fff;
-        font-size: 60px;
+        color: $white;
+        font-size: $font4;
         text-align: center;
-        text-shadow: #36c0a4 1px 1px, #36c0a4 2px 2px, #36c0a4 3px 3px, #36c0a4 4px 4px, #36c0a4 5px 5px, #36c0a4 6px 6px, #36c0a4 7px 7px, #36c0a4 8px 8px, #36c0a4 9px 9px, #36c0a4 10px 10px, #36c0a4 11px 11px, #36c0a4 12px 12px, #36c0a4 13px 13px, #36c0a4 14px 14px, #36c0a4 15px 15px, #36c0a4 16px 16px, #37c0a4 17px 17px, #37c0a4 18px 18px, #37c0a4 19px 19px, #37c0a4 20px 20px, #37c0a4 21px 21px, #37c0a4 22px 22px, #37c0a4 23px 23px, #12c0a4 24px 24px, #12c0a4 25px 25px, #12c0a4 26px 26px, #12c0a4 27px 27px, #12c0a4 28px 28px, #12c0a4 29px 29px, #12c0a4 30px 30px, #37c0a4 31px 31px, #12c0a4 32px 32px, #12c0a4 33px 33px, #12c0a4 34px 34px, #12c0a4 35px 35px, #12c0a4 36px 36px, #12c0a4 37px 37px, #12c0a4 38px 38px, #12c0a4 39px 39px, #12c0a4 40px 40px, #37c0a4 41px 41px, #12c0a4 42px 42px, #12c0a4 43px 43px, #12c0a4 44px 44px, #12c0a4 45px 45px, #12c0a4 46px 46px, #12c0a4 47px 47px, #12c0a4 48px 48px, #12c0a4 49px 49px, #12c0a4 50px 50px, #37c0a4 51px 51px, #12c0a4 52px 52px, #12c0a4 53px 53px, #12c0a4 54px 54px, #12c0a4 55px 55px, #12c0a4 56px 56px, #12c0a4 57px 57px, #12c0a4 58px 58px, #12c0a4 59px 59px, #12c0a4 60px 60px;
+        text-shadow: $light-green 1px 1px, $light-green 2px 2px, $light-green 3px 3px, $light-green 4px 4px, $light-green 5px 5px, $light-green 6px 6px, $light-green 7px 7px, $light-green 8px 8px, $light-green 9px 9px, $light-green 10px 10px, $light-green 11px 11px, $light-green 12px 12px, $light-green 13px 13px, $light-green 14px 14px, $light-green 15px 15px, $light-green 16px 16px, $light-green 17px 17px, $light-green 18px 18px, $light-green 19px 19px, $light-green 20px 20px, $light-green 21px 21px, $light-green 22px 22px, $light-green 23px 23px, $fade-green 24px 24px, $fade-green 25px 25px, $fade-green 26px 26px, $fade-green 27px 27px, $fade-green 28px 28px, $fade-green 29px 29px, $fade-green 30px 30px, $fade-green 31px 31px, $fade-green 32px 32px, $fade-green 33px 33px, $fade-green 34px 34px, $fade-green 35px 35px, $fade-green 36px 36px, $fade-green 37px 37px, $fade-green 38px 38px, $fade-green 39px 39px, $fade-green 40px 40px, $fade-green 41px 41px, $fade-green 42px 42px, $fade-green 43px 43px, $fade-green 44px 44px, $fade-green 45px 45px, $fade-green 46px 46px, $fade-green 47px 47px, $fade-green 48px 48px, $fade-green 49px 49px, $fade-green 50px 50px, $fade-green 51px 51px, $fade-green 52px 52px, $fade-green 53px 53px, $fade-green 54px 54px, $fade-green 55px 55px, $fade-green 56px 56px, $fade-green 57px 57px, $fade-green 58px 58px, $fade-green 59px 59px, $fade-green 60px 60px;
         vertical-align: middle;
         position: relative;
         margin: 0 auto 50px;
@@ -301,39 +290,14 @@ span{
 
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-.responsive{
-  width: 980px;
-  height: 650px;
-}
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-.leftHalf{
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 50%;
-  position: absolute;
-  left: 56px;
-  height: 100%;
-
-}
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-p{
-  color: #8c9398;
-  word-spacing: 1px;
-  line-height: 25px;
-  font-size: 14px;
-  margin: 1em 0;
-  padding-left: 0%;
-  padding-right: 0%;
-}
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .myCarousel{
   text-align: center;
-  background-color: #fbfbfb;
+  background-color: $white;
   position: absolute;
-  width: 54.2%;
+  width: 54.6%;
   right: 0px;
-  height: 520px;
+  height: 650px;
   float: right;
   display: block;
   overflow: hidden;
@@ -342,14 +306,14 @@ p{
 
  
     h1{
-      font-size: 15px;
+      font-size: $font3;
       text-transform: uppercase;
-      color: #353535;
+      color: $black;
       letter-spacing: 1px;
       padding-top: 80px;
       padding-bottom: 3px;
       font-weight: bold;
-      font-family: "Varela Round", sans-serif;
+      font-family: $font-style;
    }
    
 
@@ -368,39 +332,17 @@ p{
   }
  
 }
-
-.carousel-control{
-    width: 50%;
-
-  &.left, &.right{
-
-    background-image: none;
-  }}
-
-
-.cursor-icons{
-  display: none;
-}
-
-
-
-.carousel-control{
-  width: 50%;
-}
-
-
-
-.carousel{
-  .right:hover{
-    cursor: url("http://johnuberbacher.com/projects/codepen/arrow-right.png"), default !important;
-  }
-  .left:hover{
-    cursor: url("http://johnuberbacher.com/projects/codepen/arrow-left.png"), default !important;
+@media only screen and (min-width: 992px){
+  .myCarousel {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
   }
 }
 
 
 .carousel-indicators{
+    bottom: -40px;
   li{
     margin-top: 100px;
     border-radius: 13px;
@@ -409,18 +351,19 @@ p{
     margin: 2px;
     font-weight: 800;
     color: black;
-    border: 3px solid #A9A9A9;
+    border: 3px solid $dark-gray;
     bottom: 50px;
   }
   @media screen and (min-width: 992px){
-    bottom: 0px;
+    bottom: -40px;
+
   }
 }
  ol.carousel-indicators li.active{
 
    height: 13px;
   width: 13px;
-  background-color: black;
+  background-color: $dark-black;
   }
 
 #carsl{
@@ -438,26 +381,9 @@ hr{
   margin-bottom: 1.5em;
   margin-left: 43.9%;
   margin-right: 43.9%;
-  border-top: 4px solid #3dc9b3;
+  border-top: 4px solid $greenish-blue;
 }
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-.dot{
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 2px 2px;
-  background-color: #fff;
-  border-radius: 50%;
-  border-width: 3px;
-  display: inline-block;
-  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
-  transition: background-color 0.6s ease;
 
-  &:hover{
-    background-color: #000;
-  }
-
-}
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .paralx{
   background-image: url("../images/plants-bg.jpg");
@@ -472,73 +398,45 @@ hr{
     padding-top: 80px;
     padding-bottom: 80px;
     padding-right: 5px;
-    font-family: "Varela Round", sans-serif;
-    color: white;
+    font-family: $font-style;
+    color: $white;
     letter-spacing: 5px;
-    font-size: 37px;
+    font-size: $font2;
 
     #spn{
          padding-top: 15px;
-         font-size: 25px;
-         color: white;
+         font-size: $font5;
+         color: $white;
          padding-bottom: 10px;
         }
        
     }
 
  #spn1{
-        font-size: 36px;
-        color: #fff;
+        font-size: $font6;
+        color: $white;
         margin-top: 20px;
         margin-bottom: 0;
        }
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-#text1{
-  padding-top: 20px;
-  font-size: 60px;
-  letter-spacing: 12px;
-  margin: 10px;
-  color: #fff;
-  font-family: "Varela Round", sans-serif;
-
-}
-
-.swag{
-  width: 500px
-}
-
-#a2 {
-  color: #353535;
-  font-family: "Varela Round", sans-serif;
-  font-size: 15px;
-  padding-top: 20px;
-}
-
-
-#spn{
-  padding-top: 15px;
-  font-size: 25px;
-  color: white;
-}
-
 .dwn-btn{
   padding-right: 2px;
   padding-left: 2px;
   width: 40px;
   height: 40px;
-  background-color: rgba(61, 201, 179, 0.8);
+  background-color: $dark-greenish-blue;
   display: inline-block;
   margin: 10px auto 20px;
-  color: #fff;
+  color: $white;
   font-size: 16px;
   line-height: 40px;
   text-align: center;
   border-radius: 50%;
   &:hover{
-    background-color: #3dc9b3;
-    color: #fff;
+    background-color: $greenish-blue;
+    color: $white;
   }
 }
 
@@ -552,7 +450,7 @@ hr{
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .ignite{
-  background-color: #242830;
+  background-color: $dark-black;
   padding: 70px 0;
   text-align: center;
 }
@@ -560,23 +458,24 @@ hr{
 .ignite-btn{
   display: inline-block;
   padding: 25px 40px;
-  color: #fff;
-  border: solid 1px #fff;
+  color: $white;
+  border: solid 1px $white;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1px;
 
   &:hover{
-     color: #3dc9b3;
-  border-color: #3dc9b3;
+     color: $greenish-blue;
+  border-color: $greenish-blue;
   text-decoration: none;
   }
 }
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 html{
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  text-shadow: 1px 1px 1px $shadow;
   a{
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    text-shadow: 1px 1px 1px $shadow;
   }
 }
 
@@ -586,7 +485,9 @@ a{
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .social{
-  margin-top: 25px;
+  padding-top: 20px;
+  margin-top: auto;
+  margin-bottom: 20px;
 }
 
 
@@ -601,8 +502,8 @@ ul#social-button{
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: black;
-  color: #fff;
+  background-color: $black;
+  color: $white;
   font-size: 17px;
   line-height: 40px;
   text-align: center;
@@ -611,33 +512,37 @@ ul#social-button{
   box-sizing: border-box;
   display: inline-block;
   &:hover{
-    background-color: #3dc9b3;
-    color: #fff;
+    background-color: $greenish-blue;
+    color: $white;
   }
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 #team{
   h1{
-      font-size: 15px;
+      font-size: $font3;
       text-transform: uppercase;
-      color: #353535;
+      color: $black;
       letter-spacing: 1px;
       padding-top: 80px;
       padding-bottom: 3px;
       font-weight: bold;
-      font-family: "Varela Round", sans-serif;
+      font-family: $font-style;
    }
 }
 
 .section-padding{
-  padding: 0 0 100px;
+  padding: 0 0 70px;
+}
+
+  #a2 {
+  color: $black;
+  font-family: $font-style;
+  font-size: $font3;
+  padding-top: 20px;
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-#subsc{
-  padding-top: 110px;
-  padding-bottom: 60px;
-}
+
 
 .subscribe{
 
@@ -653,7 +558,7 @@ ul#social-button{
   h1{
     margin-top: 20px;
     display: inline-block;
-    color: #fff;
+    color: $white;
     margin-bottom: 60px;
     font-size: 1.1em;
     margin: 0.67em 0;
@@ -670,30 +575,30 @@ ul#social-button{
   }
   input{
     &[type=text]{
-      background-color: rgba(255, 255, 255, 0.1);
+      background-color: $trans-gray;
       border: solid 1px;
-      border-color: #fff;
+      border-color: $white;
       padding: 20px;
       width: 30%;
-      color: #fff;
+      color: $white;
       line-height: normal;
       vertical-align: baseline;
-      font-family: "Varela Round", sans-serif;
+      font-family: $font-style;
     }
     &[type=submit]{
-      background-color: rgba(61, 201, 179, 0.5);
+      background-color: $greenish-blue-op;
       border: solid 1px;
-      border-color: rgba(61, 201, 179, 0.5);
+      border-color: $greenish-blue-op;
       padding: 20px;
-      color: #fff;
+      color: $white;
       text-transform: uppercase;
       letter-spacing: 1px;
       cursor: pointer;
       line-height: normal;
-      font-family: "Varela Round", sans-serif;
+      font-family: $font-style;
     }
       &:hover{
-        background-color: #3dc9b3;
+        background-color: $greenish-blue;
       }
 }
 }
@@ -701,10 +606,10 @@ ul#social-button{
 .up-btn{
   width: 50px;
   height: 50px;
-  background-color: rgba(61, 201, 179, 0.5);
+  background-color: $greenish-blue-op;
   display: block;
   margin: 0 auto;
-  color: #fff;
+  color: $white;
   font-size: 20px;
   line-height: 45px;
   text-align: center;
@@ -712,40 +617,40 @@ ul#social-button{
   top: -26px;
   position: relative;
   &:hover{
-    background-color: #3dc9b3;
+    background-color: $greenish-blue;
     color: white;
   }
 }
 
 .contact{
   
-  background-color: whitesmoke;
+  background-color: $whitesmoke;
 
   h1{
-  font-size: 15px;
+  font-size: $font3;
   text-transform: uppercase;
-  color: #353535;
+  color: $black;
   letter-spacing: 1px;
   padding-top: 0px;
   padding-bottom: 0px;
   font-weight: bold;
-  font-family: "Varela Round", sans-serif;
+  font-family: $font-style;
 }
   
 h2{
-  font-size: 14px;
+  font-size: $font3;
   text-transform: uppercase;
-  color: #3dc9b3;
+  color: $greenish-blue;
   letter-spacing: 1.5px;
   padding-top: 30px;
   padding-bottom: 12px;
   font-weight: bold;
-  font-family: "Varela Round", sans-serif;
+  font-family: $font-style;
 
 }
 
 .light-box{
-  background-color: #fff;
+  background-color: $white;
   text-align: center;
   
 }
@@ -763,25 +668,37 @@ h2{
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 footer{
-  background-color: #242830;
-  padding: 40px 0 30px;
+
+  background-color: $dark-black;
+  width: 100%;
+  height: 100px;
+  
    a{
-    color: #a1a9b0;
+    color: $gray;
     &:hover{
-            color: #3dc9b3;
+            color: $greenish-blue;
             text-decoration: none; 
            }
     }
   p{
-    color: #fff;
-    font-family: "Varela Round", sans-serif;
+    color: $white;
+    font-family: $font-style;
+    padding-top: 30px;
+  }
+  @media only screen and (max-width: 550px){
+    p{
+      padding-top: 0px;
+      font-size: 11px;
+    }
   }
 }
 
 .legals{
   text-align: left;
+ 
 }
 .credit{
   text-align: right;
+  
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
