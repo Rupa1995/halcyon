@@ -12,18 +12,7 @@ html body{
     transition: all 0.5s;
     text-decoration: none;
   }
-   p {
-    display: block;
-    font-family: $font-style;
-    color: $light-gray;
-    padding-bottom: 0px;
-    
-    word-spacing: 1px;
-    line-height: 25px;
-    font-size: $font1;
-    margin: 1em 0;
-  
-    }
+ 
     h1{
       width: auto;
       display: inline-block;
@@ -39,6 +28,18 @@ html body{
           border-top: 4px solid $greenish-blue;
           }
 }
+  p {
+    display: block;
+    font-family: $font-style;
+    color: $light-gray;
+    padding-bottom: 0px;
+    
+    word-spacing: 1px;
+    line-height: 25px;
+    font-size: $font1;
+    margin: 1em 0;
+  
+    }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .nav{
        float: right;
@@ -322,7 +323,7 @@ span{
       }
     }
   }}
-  @media only screen and (min-width: 768px) and (max-width: 960px){
+  @media only screen and (min-width: 768px) and (max-width: 990px){
     .responsive-design .left-img img{
       right: -140px;
     }
@@ -719,9 +720,14 @@ footer{
     padding-top: 30px;
   }
   @media only screen and (max-width: 550px){
+    footer{
+      height: 120px;
+
+    }
     p{
       padding-top: 0px;
       font-size: 11px;
+
     }
   }
 }
