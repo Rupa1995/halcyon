@@ -1,28 +1,5 @@
-$font-style:"Varela Round", sans-serif;
-$font1: 13px;
-$font2: 40px;
-$font3: 15px;
-$font4: 60px;
-$font5: 25px;
-$font6: 36px;
-$whitesmoke: whitesmoke;
-$black: black;
-$faded-gray: #a1a0b014;
-$faded-gray2: #a1a0b00d;
-$light-gray: #8c9398;
-$gray: #a1a9b0;
-$dark-gray: #A9A9A9;
-$greenish-blue: #3dc9b3;
-$black: #353535;
-$white: #fff;
-$dark-black: #242830;
-$dark-greenish-blue: #309383;
-$red-gray: #ddd;
-$light-green: #36c0a4;
-$fade-green: #12c0a4;
-$greenish-blue-op: rgba(61, 201, 179, 0.5);
-$trans-gray: rgba(255, 255, 255, 0.1);
-$shadow: rgba(0, 0, 0, 0.004);
+@import 'variables';
+
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .bg-parallax-1{
@@ -46,6 +23,7 @@ $shadow: rgba(0, 0, 0, 0.004);
         margin: 10px;
         color: $black;
         font-family: $font-style;
+        border: hidden;
       }
  p {
     display: block;
@@ -125,7 +103,10 @@ span{
 }
  @media only screen and (max-width: 767px){
       .responsive-design{
-            background: $faded-gray2;
+            background: $faded-gray;
+            .myCarousel h1:after{
+                background: $faded-gray;
+            }
 
         .gray-half-bg {
           visibility: hidden;
@@ -144,6 +125,12 @@ span{
   }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+h1{
+  width: auto;
+  display: inline-block;
+  padding: 0 30px 20px;
+  border-bottom: 2px dotted $gray;
+}
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .bg-parallax-3{
@@ -259,10 +246,19 @@ body{
       text-transform: uppercase;
       color: $black;
       letter-spacing: 1px;
-      
+      position: relative;
       font-weight: bold;
       font-family: $font-style;
    }
+    h1:after {
+    content: url(../images/Layer.png);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 102%;
+    padding: 0px 15px;
+    background: $whitesmoke;
+  }
 
    @media (min-width: 990px){
     p{
@@ -290,10 +286,19 @@ body{
       text-transform: uppercase;
       color: $black;
       letter-spacing: 1px;
-     
+      position: relative;
       font-weight: bold;
       font-family: $font-style;
    }
+   h1:after {
+       content: url(../images/Layer.png);
+       position: absolute;
+       transform: translate(-50%, -50%);
+       left: 50%;
+       top: 102%;
+       padding: 0px 15px;
+       background: $white;
+  }
 
    h6{
         color: $black;
@@ -324,36 +329,29 @@ body{
 
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-.Carousel{
- /* position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  top: 50px;*/
-}
 .myCarousel{
-/*  text-align: center;
-  background-color: $white;
-  position: absolute;
-  width: 54.6%;
-  right: 0px;
-  height: 650px;
-  float: right;
-  display: block;
-  overflow: hidden;*/
 
-
-
- 
     h1{
       font-size: $font3;
       text-transform: uppercase;
       color: $black;
       letter-spacing: 1px;
       padding-top: 80px;
-      padding-bottom: 3px;
+      padding-bottom: 20px;
       font-weight: bold;
       font-family: $font-style;
+      position: relative;
    }
+    h1:after {
+    content: url("../images/Layer.png");
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    
+    top: 102%;
+    padding: 0px 15px;
+    background: $white;
+  }
    
 
 }
@@ -371,13 +369,7 @@ body{
   }
  
 }
-@media only screen and (min-width: 992px){
-  /*.myCarousel {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 50px;
-  }*/
-}
+
 
 
 .carousel-indicators{
@@ -452,7 +444,7 @@ hr{
     }
 
  #spn1{
-        font-size: $font6;
+        font-size: $font2;
         color: $white;
         margin-top: 20px;
         margin-bottom: 0;
@@ -564,10 +556,21 @@ ul#social-button{
       color: $black;
       letter-spacing: 1px;
       padding-top: 80px;
-      padding-bottom: 3px;
+      padding-bottom: 20px;
       font-weight: bold;
       font-family: $font-style;
+      position: relative;
    }
+ h1:after {
+    content: url("../images/Layer.png");
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    
+    top: 102%;
+    padding: 0px 15px;
+    background: $white;
+  }
 }
 
 .section-padding{
@@ -606,6 +609,7 @@ ul#social-button{
     margin-top: 20px;
     letter-spacing: 1px;
     margin-bottom: 40px;
+    border: hidden;
   }
   i{
     display: inline-block;
@@ -671,11 +675,21 @@ ul#social-button{
   color: $black;
   letter-spacing: 1px;
   padding-top: 0px;
-  padding-bottom: 0px;
+  padding-bottom: 20px;
   font-weight: bold;
   font-family: $font-style;
-}
-  
+  position: relative;
+  } 
+ h1:after {
+    content: url("../images/Layer.png");
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 102%;
+    padding: 0px 15px;
+    background: $whitesmoke;
+  }
+
 h2{
   font-size: $font3;
   text-transform: uppercase;
