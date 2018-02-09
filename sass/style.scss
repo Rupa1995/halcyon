@@ -206,8 +206,8 @@ span{
 
    @media (min-width: 990px){
     p{
-      padding-right: 100px;
-      padding-left: 100px;
+      padding-right: 135px;
+      padding-left: 135px;
       text-align: center;
       padding-top: 1%;
       padding-bottom: 1%;
@@ -220,8 +220,8 @@ span{
 
 .intro2{
  
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-right: 60px;
+  padding-left: 60px;
   padding-bottom: 10px;
   text-align: center;
 
@@ -410,7 +410,7 @@ span{
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .paralx{
   background-image: url("../images/plants-bg.jpg");
-  min-height: 300px;
+  min-height: 250px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -418,8 +418,8 @@ span{
   text-align: center;
 
   #swag{
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     padding-right: 5px;
     font-family: $font-style;
     color: $white;
@@ -440,6 +440,9 @@ span{
         color: $white;
         margin-top: 20px;
         margin-bottom: 0;
+       }
+       .fa-chevron-down {
+        padding-left: 4px;
        }
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -621,8 +624,11 @@ ul#social-button{
       line-height: normal;
       font-family: $font-style;
     }
-      &:hover{
+      &[type=submit]:hover{
         background-color: $greenish-blue;
+      }
+       &[type=text]:hover{
+        background-color: $trans-gray-hover;
       }
 }
 }
