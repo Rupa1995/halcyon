@@ -215,7 +215,7 @@ p {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #ddd;
+  background-color: #555;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 18px;
@@ -232,7 +232,7 @@ p {
 }
 /* line 216, ../sass/style.scss */
 .sidenav a:hover {
-  color: #242830;
+  color: #fff;
 }
 /* line 221, ../sass/style.scss */
 .sidenav .closebtn {

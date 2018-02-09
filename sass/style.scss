@@ -200,7 +200,7 @@ body{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: $red-gray;
+  background-color: $black-gray;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 18px;
@@ -214,7 +214,7 @@ body{
     transition: 0.3s;
 
     &:hover{
-      color: $dark-black;
+      color: $white;
     }
   }
 
