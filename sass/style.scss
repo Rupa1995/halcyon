@@ -1,7 +1,109 @@
 @import 'variables';
 
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+body{
+  overflow-x: hidden
+}
+html body{
+  text-shadow: 1px 1px 1px $shadow;
+  width: 100%;
+  a{
+    text-shadow: 1px 1px 1px $shadow;
+    transition: all 0.5s;
+    text-decoration: none;
+  }
+   p {
+    display: block;
+    font-family: $font-style;
+    color: $light-gray;
+    padding-bottom: 0px;
+    
+    word-spacing: 1px;
+    line-height: 25px;
+    font-size: $font1;
+    margin: 1em 0;
+  
+    }
+    h1{
+      width: auto;
+      display: inline-block;
+      padding: 0 30px 20px;
+      border-bottom: 2px dotted $gray;
+      }
+      hr{
+          display: block;
+          margin-top: 1.5em;
+          margin-bottom: 1.5em;
+          margin-left: 43.9%;
+          margin-right: 43.9%;
+          border-top: 4px solid $greenish-blue;
+          }
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.nav{
+       float: right;
+       color: $dark-black !important;
+       position: relative;
+       width: 60px;
+       top: 11%;
+       right: 9%;
 
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+       span{
+         font-size: $font2;
+         cursor: pointer;
+         font-weight: 90px;
+         }
+      }
+@media only screen and (max-width: 550px){
+  .nav{
+    top: 6%;
+    right: 3%;
+  }
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.sidenav{
+  height: 36%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  font-size: $font3;
+  letter-spacing: 1.5px;
+  background-color: $black-gray;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+  
+  text-align: center;
+  font-family: $font-style;
+  a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: $font3;
+    color: $gray;
+    display: block;
+    transition: 0.3s;
+
+    &:hover{
+      color: $white;
+    }
+  }
+
+  .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: $font2;
+    margin-left: 50px;
+  }
+  @media only screen and (max-width: 550px){
+    .sidenav {
+      height: 13%;
+    }
+  }
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .bg-parallax-1{
   background-image: url("../images/hero-bg.jpg");
   min-height: 800px;
@@ -66,170 +168,6 @@ span{
   .bg-parallax-1{
     min-height: 500px;
     }
-}
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
-.responsive-design {
-  display: flex;
-  position: relative;
-  z-index: -4;
-
-  .gray-half-bg {
-    background: $faded-gray;
-    width: 50%;
-    height: 100%;
-    position: absolute;
-
-  }
-
-  .left-img {
-    position: relative;
-    overflow: hidden;
-
-    img {
-      position: relative;
-      right: -185px;
-      width: 100%;
-      height: 460px;
-    }
-  }
-  .myCarousel {
-          padding-bottom: 100px;
-  }
-  .carousel {
-    position: relative;
-    text-align: center;
-  }
-}
- @media only screen and (max-width: 767px){
-      .responsive-design{
-            background: $faded-gray;
-            .myCarousel h1:after{
-                background: $faded-gray;
-            }
-
-        .gray-half-bg {
-          visibility: hidden;
-        }
-      .left-img {
-                    display: none;
-        img {
-        visibility: hidden;
-      }
-    }
-  }}
-  @media only screen and (min-width: 768px) and (max-width: 960px){
-    .responsive-design .left-img img{
-      right: -140px;
-    }
-  }
-  @media only screen and (min-width: 1199px){
-     .responsive-design .left-img img{
-      right: -220px;
-    }
-  }
-
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-h1{
-  width: auto;
-  display: inline-block;
-  padding: 0 30px 20px;
-  border-bottom: 2px dotted $gray;
-}
-
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-.bg-parallax-3{
-  background-image: url("../images/plants-bg.jpg");
-  min-height: 300px;
-  width: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  background-attachment: fixed;
-}
-
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-html body{
-  width: 100%
-}
-
-body{
-  overflow-x: hidden
-}
- p {
-    display: block;
-    font-family: $font-style;
-    color: $light-gray;
-    padding-bottom: 0px;
-    
-  word-spacing: 1px;
-  line-height: 25px;
-  font-size: $font1;
-  margin: 1em 0;
-  
-}
-
- 
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-.nav{
-       float: right;
-       color: $dark-black !important;
-       position: relative;
-       width: 60px;
-       top: 11%;
-       right: 9%;
-
-       span{
-         font-size: $font2;
-         cursor: pointer;
-         font-weight: 90px;
-         }
-      }
-@media only screen and (max-width: 550px){
-  .nav{
-    top: 6%;
-    right: 3%;
-  }
-}
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-.sidenav{
-  height: 36%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: $black-gray;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 18px;
-  text-align: center;
-  a{
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: $font3;
-    color: $gray;
-    display: block;
-    transition: 0.3s;
-
-    &:hover{
-      color: $white;
-    }
-  }
-
-  .closebtn{
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: $font2;
-    margin-left: 50px;
-  }
-  @media only screen and (max-width: 550px){
-    .sidenav {
-      height: 13%;
-    }
-  }
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -334,6 +272,68 @@ body{
 
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.responsive-design {
+  display: flex;
+  position: relative;
+  z-index: -4;
+
+  .gray-half-bg {
+    background: $faded-gray;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+
+  }
+
+  .left-img {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      position: relative;
+      right: -185px;
+      width: 100%;
+      height: 460px;
+    }
+  }
+  .myCarousel {
+          padding-bottom: 100px;
+  }
+  .carousel {
+    position: relative;
+    text-align: center;
+  }
+}
+ @media only screen and (max-width: 767px){
+      .responsive-design{
+            background: $faded-gray;
+            .myCarousel h1:after{
+                background: $faded-gray;
+            }
+
+        .gray-half-bg {
+          visibility: hidden;
+        }
+      .left-img {
+                    display: none;
+        img {
+        visibility: hidden;
+      }
+    }
+  }}
+  @media only screen and (min-width: 768px) and (max-width: 960px){
+    .responsive-design .left-img img{
+      right: -140px;
+    }
+  }
+  @media only screen and (min-width: 1199px){
+     .responsive-design .left-img img{
+      right: -220px;
+    }
+  }
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .myCarousel{
 
     h1{
@@ -357,25 +357,13 @@ body{
     padding: 0px 15px;
     background: $white;
   }
-   
-
 }
-@media screen and (max-width: 480px){
+
+@media screen and (max-width: 767px){
 .myCarousel {
     width: 100%;
-      
-  }
- 
-}
-@media screen and (min-width: 481px) and (max-width: 767px){
-.myCarousel {
-    width: 100%;
-      
-  }
- 
-}
-
-
+      }
+    }
 
 .carousel-indicators{
     bottom: -40px;
@@ -407,19 +395,17 @@ body{
   padding-right: 2%;
 }
 
-
-
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
-hr{
-  display: block;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  margin-left: 43.9%;
-  margin-right: 43.9%;
-  border-top: 4px solid $greenish-blue;
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.bg-parallax-3{
+  background-image: url("../images/plants-bg.jpg");
+  min-height: 300px;
+  width: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  background-attachment: fixed;
 }
-
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .paralx{
   background-image: url("../images/plants-bg.jpg");
@@ -507,18 +493,7 @@ hr{
   }
 }
 
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-html{
-  text-shadow: 1px 1px 1px $shadow;
-  a{
-    text-shadow: 1px 1px 1px $shadow;
-  }
-}
 
-a{
-  transition: all 0.5s;
-  text-decoration: none;
-}
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .social{
   padding-top: 20px;
