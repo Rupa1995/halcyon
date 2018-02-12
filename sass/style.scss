@@ -2,16 +2,16 @@
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 body{
-  overflow-x: hidden
+  overflow-x: hidden;
 }
-html body{
+
+html{
   text-shadow: 1px 1px 1px $shadow;
-  width: 100%;
   a{
     text-shadow: 1px 1px 1px $shadow;
     transition: all 0.5s;
     text-decoration: none;
-  }
+  }}
  
     h1{
       width: auto;
@@ -27,7 +27,7 @@ html body{
           margin-right: 43.9%;
           border-top: 4px solid $greenish-blue;
           }
-}
+
   p {
     display: block;
     font-family: $font-style;
@@ -269,6 +269,10 @@ span{
         margin: 0 auto 50px;
         box-sizing: border-box;
       }
+     p{
+      padding-bottom: 10px;
+
+     }
    }
 
 
@@ -277,7 +281,8 @@ span{
 .responsive-design {
   display: flex;
   position: relative;
-  z-index: -4;
+  z-index: 1;
+
 
   .gray-half-bg {
     background: $faded-gray;
@@ -306,6 +311,7 @@ span{
     text-align: center;
   }
 }
+
  @media only screen and (max-width: 767px){
       .responsive-design{
             background: $faded-gray;
@@ -363,12 +369,17 @@ span{
 @media screen and (max-width: 767px){
 .myCarousel {
     width: 100%;
+    #carsl{
+       text-align: center;
+       padding-left: 2%;
+       padding-right: 2%;
       }
+    }
     }
 
 .carousel-indicators{
     bottom: -40px;
-  li{
+    li{
     margin-top: 100px;
     border-radius: 13px;
     height: 13px;
@@ -378,6 +389,9 @@ span{
     color: black;
     border: 3px solid $dark-gray;
     bottom: 50px;
+    cursor: pointer;
+
+
   }
   @media screen and (min-width: 992px){
     bottom: -40px;
@@ -392,8 +406,9 @@ span{
   }
 
 #carsl{
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: left;
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -465,14 +480,48 @@ span{
     color: $white;
   }
 }
-
-
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.portfolio{
 .image{
   width: 100%;
   display: block;
   height: auto;
   padding-top: 90px;
   padding-bottom: 50px;
+  
+}
+.overlay{
+
+  position: absolute;
+  top: 17.6%;
+  bottom: 44%;
+  left: 15px;
+  right: 10%;
+  background-color: $greenish-blue-op;
+  overflow: hidden;
+  width: 0;
+  height: auto;
+  transition: 0.5s ease;
+  text-align: center;
+}
+.overly:hover .overlay{
+  width: 92.6%;
+}
+.glyphicon {
+  color: $white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+#gly{
+  color: $white;
+  font-size: 15px;
+  text-transform: uppercase;
+}
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .ignite{
