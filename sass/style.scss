@@ -1,3 +1,4 @@
+
 @import 'variables';
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -11,7 +12,7 @@ html{
     text-shadow: 1px 1px 1px $shadow;
     transition: all 0.5s;
     text-decoration: none;
-  }}
+  }
  
     h1{
       width: auto;
@@ -39,9 +40,10 @@ html{
     font-size: $font1;
     margin: 1em 0;
   
-    }
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-.nav{
+    }}
+
+ /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<--------NAVIGATION(icon + slide)------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+   .nav{
        float: right;
        color: $dark-black !important;
        position: relative;
@@ -55,13 +57,6 @@ html{
          font-weight: 90px;
          }
       }
-@media only screen and (max-width: 550px){
-  .nav{
-    top: 6%;
-    right: 3%;
-  }
-}
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .sidenav{
   height: 36%;
   width: 0;
@@ -98,13 +93,9 @@ html{
     font-size: $font2;
     margin-left: 50px;
   }
-  @media only screen and (max-width: 550px){
-    .sidenav {
-      height: 13%;
-    }
-  }
+ 
 }
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<--------HOME(PAGE-1)--------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .bg-parallax-1{
   background-image: url("../images/hero-bg.jpg");
   min-height: 800px;
@@ -164,13 +155,8 @@ span{
 .inner {
   padding-top: 170px;
 }
-@media only screen and (max-width: 550px)
-{
-  .bg-parallax-1{
-    min-height: 500px;
-    }
-}
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-----INTRO(PAGE-2)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 #intro{
   background-color: $whitesmoke;
@@ -204,19 +190,10 @@ span{
     background: $whitesmoke;
   }
 
-   @media (min-width: 990px){
-    p{
-      padding-right: 135px;
-      padding-left: 135px;
-      text-align: center;
-      padding-top: 1%;
-      padding-bottom: 1%;
-    }
-    
-   }
- }
+  
+}
 
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<---------FEATURES(PAGE-3)------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 .intro2{
  
@@ -274,9 +251,7 @@ span{
 
      }
    }
-
-
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-------SPLIT-SCREEN(PAGE-4)----------------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 .responsive-design {
   display: flex;
@@ -312,117 +287,8 @@ span{
   }
 }
 
- @media only screen and (max-width: 767px){
-      .responsive-design{
-            background: $faded-gray;
-            .myCarousel h1:after{
-                background: $faded-gray;
-            }
 
-        .gray-half-bg {
-          visibility: hidden;
-        }
-      .left-img {
-                    display: none;
-        img {
-        visibility: hidden;
-      }
-    }
-  }}
-  @media only screen and (min-width: 768px) and (max-width: 990px){
-    .responsive-design .left-img img{
-      right: -140px;
-    }
-  }
-  @media only screen and (min-width: 1199px){
-     .responsive-design .left-img img{
-      right: -220px;
-    }
-  }
-
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-.myCarousel{
-
-    h1{
-      font-size: $font3;
-      text-transform: uppercase;
-      color: $black;
-      letter-spacing: 1px;
-      padding-top: 80px;
-      padding-bottom: 20px;
-      font-weight: bold;
-      font-family: $font-style;
-      position: relative;
-   }
-    h1:after {
-    content: url("../images/Layer.png");
-    position: absolute;
-    transform: translate(-50%,-50%);
-    left: 50%;
-    
-    top: 102%;
-    padding: 0px 15px;
-    background: $white;
-  }
-}
-
-@media screen and (max-width: 767px){
-.myCarousel {
-    width: 100%;
-    #carsl{
-       text-align: center;
-       padding-left: 2%;
-       padding-right: 2%;
-      }
-    }
-    }
-
-.carousel-indicators{
-    bottom: -40px;
-    li{
-    margin-top: 100px;
-    border-radius: 13px;
-    height: 13px;
-    width: 13px;
-    margin: 2px;
-    font-weight: 800;
-    color: black;
-    border: 3px solid $dark-gray;
-    bottom: 50px;
-    cursor: pointer;
-
-
-  }
-  @media screen and (min-width: 992px){
-    bottom: -40px;
-
-  }
-}
- ol.carousel-indicators li.active{
-
-   height: 13px;
-  width: 13px;
-  background-color: $dark-black;
-  }
-
-#carsl{
-  padding-left: 10%;
-  padding-right: 10%;
-  text-align: left;
-}
-
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-.bg-parallax-3{
-  background-image: url("../images/plants-bg.jpg");
-  min-height: 300px;
-  width: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  background-attachment: fixed;
-}
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-------PARALX(PAGE-5)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .paralx{
   background-image: url("../images/plants-bg.jpg");
   min-height: 250px;
@@ -460,8 +326,17 @@ span{
         padding-left: 4px;
        }
 }
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
+.bg-parallax-3{
+  background-image: url("../images/plants-bg.jpg");
+  min-height: 300px;
+  width: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  background-attachment: fixed;
+}
 .dwn-btn{
   padding-right: 2px;
   padding-left: 2px;
@@ -480,23 +355,33 @@ span{
     color: $white;
   }
 }
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<------------PORTFOLIO(PAGE-6)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .portfolio{
+.col-md-4{
+  padding-top: 80px;
+}
 .image{
   width: 100%;
   display: block;
   height: auto;
-  padding-top: 90px;
-  padding-bottom: 50px;
+ 
+  position: relative;
   
+}
+.overly{
+   width: 100%;
+  display: block;
+  height: auto;
+ 
+  position: relative;
 }
 .overlay{
 
   position: absolute;
-  top: 17.6%;
-  bottom: 44%;
-  left: 15px;
-  right: 10%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background-color: $greenish-blue-op;
   overflow: hidden;
   width: 0;
@@ -505,8 +390,9 @@ span{
   text-align: center;
 }
 .overly:hover .overlay{
-  width: 92.6%;
+  width: 100%;
 }
+
 .glyphicon {
   color: $white;
   font-size: 30px;
@@ -523,7 +409,9 @@ span{
   text-transform: uppercase;
 }
 }
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-----------99-PROBLEMS(PAGE-7)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
 .ignite{
   background-color: $dark-black;
   padding: 70px 0;
@@ -545,43 +433,7 @@ span{
   text-decoration: none;
   }
 }
-
-
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-.social{
-  padding-top: 20px;
-  margin-top: auto;
-  margin-bottom: 20px;
-}
-
-
-ul#social-button{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-
-}
-.social-btn{
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: $black;
-  color: $white;
-  font-size: 17px;
-  line-height: 40px;
-  text-align: center;
-  position: relative;
-  margin: 0 auto 10px;
-  box-sizing: border-box;
-  display: inline-block;
-  &:hover{
-    background-color: $greenish-blue;
-    color: $white;
-  }
-}
-
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----TEAM(PAGE-8)-----<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 #team{
   h1{
       font-size: $font3;
@@ -616,9 +468,7 @@ ul#social-button{
   font-size: $font3;
   padding-top: 20px;
 }
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
-
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<------SUBSCRIBE(PAGE-9)-------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .subscribe{
 
   padding-top: 80px;
@@ -681,7 +531,7 @@ ul#social-button{
       }
 }
 }
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<------CONTACT(PAGE-10)-------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .up-btn{
   width: 50px;
   height: 50px;
@@ -755,7 +605,7 @@ h2{
   font-size: 20px;
 
 }
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<-------FOOTER-------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 footer{
 
   background-color: $dark-black;
@@ -772,19 +622,9 @@ footer{
   p{
     color: $white;
     font-family: $font-style;
-    padding-top: 30px;
+    padding-top: 25px;
   }
-  @media only screen and (max-width: 550px){
-    footer{
-      height: 120px;
 
-    }
-    p{
-      padding-top: 0px;
-      font-size: 11px;
-
-    }
-  }
 }
 
 .legals{
@@ -794,5 +634,127 @@ footer{
 .credit{
   text-align: right;
   }
+/*<<<<<<<<<<<<<<<<<<<<<<<<<------------"SOCIAL ICONS"----------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.social{
+  padding-top: 20px;
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+
+ul#social-button{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+}
+.social-btn{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $black;
+  color: $white;
+  font-size: 17px;
+  line-height: 40px;
+  text-align: center;
+  position: relative;
+  margin: 0 auto 10px;
+  box-sizing: border-box;
+  display: inline-block;
+  &:hover{
+    background-color: $greenish-blue;
+    color: $white;
+  }
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<--------CAROUSELS-------------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.myCarousel{
+
+    h1{
+      font-size: $font3;
+      text-transform: uppercase;
+      color: $black;
+      letter-spacing: 1px;
+      padding-top: 80px;
+      padding-bottom: 20px;
+      font-weight: bold;
+      font-family: $font-style;
+      position: relative;
+   }
+    h1:after {
+    content: url("../images/Layer.png");
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    
+    top: 102%;
+    padding: 0px 15px;
+    background: $white;
+  }
+}
+
+
+.carousel-indicators{
+    bottom: -40px;
+    li{
+    margin-top: 100px;
+    border-radius: 13px;
+    height: 13px;
+    width: 13px;
+    margin: 2px;
+    font-weight: 800;
+    color: black;
+    border: 3px solid $dark-gray;
+    bottom: 50px;
+    cursor: pointer;
+
+
+  }
+
+}
+ ol.carousel-indicators li.active{
+
+   height: 13px;
+  width: 13px;
+  background-color: $dark-black;
+  }
+
+#carsl{
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: left;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+#btn{
+ 
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 18px;
+  z-index: 99;
+  border: none;
+  outline: 0;
+  background-color: $black-gray;
+  cursor: pointer;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  font-weight: 500;
+  font-size: 22px;
+  .fa{
+    color: $greenish-blue-op;
+  }
+}
+#btn:hover{
+  background-color: $dark-black;
+  .fa{
+  color: $greenish-blue;
+}}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+@import 'media-query';
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-----END------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
