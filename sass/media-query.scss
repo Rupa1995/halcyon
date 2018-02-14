@@ -1,15 +1,22 @@
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<------nav------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-@media only screen and (max-width: $xs){
+@media only screen and (max-width: $md){
   .nav{
-    top: 6%;
-    right: 3%;
+    top: 3%;
+    left: -7%;
   }
-}
-  @media only screen and (max-width: $xs){
     .sidenav {
-      height: 13%;
+      a{
+      padding: 20px 8px 20px 15px;
+      font-size: 25px;
+      }
+      li{
+        margin-left: 20px;
+        margin-right: 70px;
+      }
     }
-  }
+  
+}
+ 
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<------home------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
   

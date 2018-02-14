@@ -1,18 +1,11 @@
 //==================================== Nav ==================================================//
-		$(document).ready(function() {
-  			$(document).delegate('.open', 'click', function(event){
-   				 $(this).addClass('oppenned');
-    				event.stopPropagation();
-
- 			 })
- 			 $(document).delegate('body', 'click', function(event) {
-   				 $('.open').removeClass('oppenned');
- 			 })
- 			$(document).delegate('.cls', 'click', function(event){
-   				 $('.open').removeClass('oppenned');
-    				event.stopPropagation();
-  			});
-		});
+	 function openNav()
+    {
+      document.getElementById("mynav").style.width = "100%";
+    }
+    function closeNav() {
+        document.getElementById("mynav").style.width = "0";
+    }
 
 // ==================================== Scroll to Top ===========================================//
 
@@ -30,8 +23,6 @@ $('#return-to-top').click(function() {      // When arrow is clicked
 });
 
 //====================================== Smooth Scrolling ========================================//
-
-
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {

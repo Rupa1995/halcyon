@@ -1,14 +1,14 @@
 /*
-Error: Undefined variable: "$xs".
+Error: Undefined variable: "$md".
         on line 2 of /var/www/html/halcyon/sass/media-query.scss
 
 1: /*<<<<<<<<<<<<<<<<<<<<<<<<<<<------nav------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*\/
-2: @media only screen and (max-width: $xs){
+2: @media only screen and (max-width: $md){
 3:   .nav{
-4:     top: 6%;
-5:     right: 3%;
+4:     top: 3%;
+5:     left: -7%;
 6:   }
-7: }
+7:     .sidenav {
 
 Backtrace:
 /var/www/html/halcyon/sass/media-query.scss:2
@@ -54,4 +54,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$xs\".\A         on line 2 of /var/www/html/halcyon/sass/media-query.scss\A \A 1: /*<<<<<<<<<<<<<<<<<<<<<<<<<<<------nav------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/\A 2: @media only screen and (max-width: $xs){\A 3:   .nav{\A 4:     top: 6%;\A 5:     right: 3%;\A 6:   }\A 7: }"; }
+  content: "Error: Undefined variable: \"$md\".\A         on line 2 of /var/www/html/halcyon/sass/media-query.scss\A \A 1: /*<<<<<<<<<<<<<<<<<<<<<<<<<<<------nav------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/\A 2: @media only screen and (max-width: $md){\A 3:   .nav{\A 4:     top: 3%;\A 5:     left: -7%;\A 6:   }\A 7:     .sidenav {"; }
