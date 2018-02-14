@@ -779,6 +779,7 @@ ol.carousel-indicators li.active {
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* line 748, ../sass/style.scss */
 #return-to-top {
+  z-index: 99;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -798,7 +799,7 @@ ol.carousel-indicators li.active {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 768, ../sass/style.scss */
+/* line 769, ../sass/style.scss */
 #return-to-top i {
   color: #fff;
   margin: 0;
@@ -813,11 +814,11 @@ ol.carousel-indicators li.active {
   transition: all 0.3s ease;
 }
 
-/* line 781, ../sass/style.scss */
+/* line 782, ../sass/style.scss */
 #return-to-top:hover {
   background: #242830;
 }
-/* line 783, ../sass/style.scss */
+/* line 784, ../sass/style.scss */
 #return-to-top:hover i {
   color: #fff;
   top: 5px;
