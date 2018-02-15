@@ -3,11 +3,12 @@
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 body{
-  overflow-x: hidden;
   width: 100%;
+  overflow-x: hidden;
 }
 
 html{
+  width: 100%;
   text-shadow: 1px 1px 1px $shadow;
   a{
     text-shadow: 1px 1px 1px $shadow;
@@ -34,7 +35,7 @@ html{
     display: block;
     font-family: $font-style;
     color: $light-gray;
-    padding-bottom: 0px;
+    padding-bottom: 10px;
     
     word-spacing: 1px;
     line-height: 25px;
@@ -115,16 +116,16 @@ html{
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<--------HOME(PAGE-1)--------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .bg-parallax-1{
   background-image: url("../images/hero-bg.jpg");
-  min-height: 800px;
+  min-height: 720px;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
   text-align: center;
-  background-attachment: fixed;
+  
   position: relative;
-  padding: 65px 0 300px 0;
+  padding: 40px 0 160px 0;
   height: auto;
 
 
@@ -170,7 +171,7 @@ span{
   }
 
 .inner {
-  padding-top: 170px;
+  padding-top: 165px;
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-----INTRO(PAGE-2)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -598,8 +599,8 @@ h2{
   text-transform: uppercase;
   color: $greenish-blue;
   letter-spacing: 1.5px;
-  padding-top: 30px;
-  padding-bottom: 12px;
+  padding-top: 15px;
+  padding-bottom: 0px;
   font-weight: bold;
   font-family: $font-style;
 
@@ -619,7 +620,7 @@ h2{
 #fa-i{
   color: black;
   padding-bottom: 0px;
-  font-size: 20px;
+  font-size: 25px;
 
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<-------FOOTER-------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -641,6 +642,7 @@ footer{
     font-family: $font-style;
     padding-top: 25px;
   }
+ 
 
 }
 
@@ -651,6 +653,7 @@ footer{
 .credit{
   text-align: right;
   }
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<------------"SOCIAL ICONS"----------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 .social{
