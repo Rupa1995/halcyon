@@ -12,14 +12,15 @@
 $(window).scroll(function() {
     if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
         $('#return-to-top').fadeIn(200);    // Fade in the arrow
-    } else {
+    }
+     else {
         $('#return-to-top').fadeOut(200);   // Else fade out the arrow
     }
 });
 $('#return-to-top').click(function() {      // When arrow is clicked
     $('body,html').animate({
         scrollTop : 0                       // Scroll to top of body
-    }, 500);
+    }, 2000);
 });
 
 //====================================== Smooth Scrolling ========================================//
@@ -39,7 +40,7 @@ $(document).ready(function(){
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 800, function(){
+      }, 1500, function(){
    
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
