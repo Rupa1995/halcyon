@@ -84,6 +84,14 @@ html{
 
     }
   }
+  ul{
+    padding: 0px;
+  }
+  li{
+    border-bottom: 1px dotted $gray;
+    margin-right: 15%;
+    margin-left: 15%;
+  }
   .closebtn {
     position: absolute;
     top: 0;
