@@ -192,8 +192,8 @@ html p {
 }
 /* line 184, ../sass/style.scss */
 .bg-parallax-1 .button:hover, .bg-parallax-1 .button:focus {
-  box-shadow: 0 1.5em 1.5em -0.4em #309383;
-  transform: translateY(-0.25em);
+  box-shadow: 0 1em 1em -0.4em #309383;
+  transform: translateY(-0.2em);
 }
 
 /* line 191, ../sass/style.scss */
@@ -609,12 +609,10 @@ html p {
 /* line 595, ../sass/style.scss */
 .subscribe input[type=submit]:hover {
   background-color: #3dc9b3;
-  transform: translateY(-5px);
 }
 /* line 599, ../sass/style.scss */
 .subscribe input[type=text]:hover {
   background-color: rgba(255, 255, 255, 0.4);
-  transform: translateY(-5px);
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<------CONTACT(PAGE-10)-------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -684,7 +682,7 @@ html p {
 /* line 665, ../sass/style.scss */
 .contact .light-box:hover {
   border-bottom: 4px solid #3dc9b3;
-  transform: translateY(-30px);
+  transform: translate3d(0, -8px, 2px);
 }
 
 /* line 673, ../sass/style.scss */
