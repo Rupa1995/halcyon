@@ -86,18 +86,15 @@ html p {
   display: block;
   transition: 0.3s;
 }
-/* line 81, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 .sidenav a:hover {
   color: #fff;
-}
-/* line 85, ../sass/style.scss */
-.sidenav li {
-  border-bottom: 1px dotted #a1a9b0;
-  margin-right: 150px;
-  margin-left: 100px;
+  border-bottom: rgba(61, 201, 179, 0.5) 3px solid;
+  margin-left: 43%;
+  margin-right: 35%;
   text-align: center;
 }
-/* line 92, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -106,24 +103,24 @@ html p {
   margin-left: 50px;
 }
 
-/* line 102, ../sass/style.scss */
+/* line 100, ../sass/style.scss */
 #main {
   transition: margin-left .5s;
   padding: 10px;
 }
 
 @media screen and (max-height: 450px) {
-  /* line 108, ../sass/style.scss */
+  /* line 106, ../sass/style.scss */
   .sidenav {
     padding-top: 15px;
   }
-  /* line 110, ../sass/style.scss */
+  /* line 108, ../sass/style.scss */
   .sidenav a {
     font-size: 18px;
   }
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<--------HOME(PAGE-1)--------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 117, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 .bg-parallax-1 {
   background-image: url("../images/hero-bg.jpg");
   min-height: 720px;
@@ -133,11 +130,12 @@ html p {
   background-size: cover;
   height: auto;
   text-align: center;
+  background-attachment: fixed;
   position: relative;
   padding: 40px 0 160px 0;
   height: auto;
 }
-/* line 132, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 .bg-parallax-1 h1 {
   font-size: 40px;
   letter-spacing: 12px;
@@ -145,20 +143,26 @@ html p {
   color: #353535;
   font-family: "Varela Round", sans-serif;
   border: hidden;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: 1;
 }
-/* line 140, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 .bg-parallax-1 p {
   display: block;
   font-family: "Varela Round", sans-serif;
   color: #8c9398;
   padding-bottom: 45px;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: 1;
 }
-/* line 147, ../sass/style.scss */
+/* line 152, ../sass/style.scss */
 .bg-parallax-1 span {
   color: #a1a9b0;
   display: inline-block;
 }
-/* line 152, ../sass/style.scss */
+/* line 157, ../sass/style.scss */
 .bg-parallax-1 .button {
   display: inline-block;
   padding: 20px 40px;
@@ -177,15 +181,18 @@ html p {
   box-sizing: border-box;
   box-shadow: 0px 3px 0px 0px #309383;
   font-family: "Varela Round", sans-serif;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 0.1s;
+  -webkit-animation-iteration-count: 1;
 }
 
-/* line 173, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 .inner {
   padding-top: 165px;
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-----INTRO(PAGE-2)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 179, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 #intro {
   background-color: whitesmoke;
   padding-top: 8%;
@@ -194,13 +201,16 @@ html p {
   padding-bottom: 8%;
   text-align: center;
   margin-bottom: 50px;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-iteration-count: 1;
 }
-/* line 188, ../sass/style.scss */
+/* line 200, ../sass/style.scss */
 #intro a {
   color: black;
   font-family: "Varela Round", sans-serif;
 }
-/* line 192, ../sass/style.scss */
+/* line 204, ../sass/style.scss */
 #intro h1 {
   font-size: 15px;
   text-transform: uppercase;
@@ -210,7 +220,7 @@ html p {
   font-weight: bold;
   font-family: "Varela Round", sans-serif;
 }
-/* line 201, ../sass/style.scss */
+/* line 214, ../sass/style.scss */
 #intro h1:after {
   content: url(../images/Layer.png);
   position: absolute;
@@ -222,14 +232,14 @@ html p {
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<---------FEATURES(PAGE-3)------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 216, ../sass/style.scss */
+/* line 229, ../sass/style.scss */
 .intro2 {
   padding-right: 60px;
   padding-left: 60px;
   padding-bottom: 10px;
   text-align: center;
 }
-/* line 223, ../sass/style.scss */
+/* line 236, ../sass/style.scss */
 .intro2 h1 {
   font-size: 15px;
   text-transform: uppercase;
@@ -239,7 +249,7 @@ html p {
   font-weight: bold;
   font-family: "Varela Round", sans-serif;
 }
-/* line 232, ../sass/style.scss */
+/* line 246, ../sass/style.scss */
 .intro2 h1:after {
   content: url(../images/Layer.png);
   position: absolute;
@@ -249,14 +259,14 @@ html p {
   padding: 0px 15px;
   background: #fff;
 }
-/* line 242, ../sass/style.scss */
+/* line 256, ../sass/style.scss */
 .intro2 h6 {
   color: #353535;
   font-family: "Varela Round", sans-serif;
   font-size: 15px;
   padding-top: 20px;
 }
-/* line 249, ../sass/style.scss */
+/* line 263, ../sass/style.scss */
 .intro2 .icon {
   height: 175px;
   width: 175px;
@@ -275,49 +285,57 @@ html p {
   margin: 0 auto 50px;
   box-sizing: border-box;
 }
-/* line 267, ../sass/style.scss */
+/* line 280, ../sass/style.scss */
+.intro2 .icon:hover {
+  font-size: 70px;
+  height: 180px;
+  width: 180px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 30px 0 #3dc9b3;
+}
+/* line 288, ../sass/style.scss */
 .intro2 p {
   padding-bottom: 10px;
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-------SPLIT-SCREEN(PAGE-4)----------------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 274, ../sass/style.scss */
+/* line 294, ../sass/style.scss */
 .responsive-design {
   display: flex;
   position: relative;
   z-index: 1;
 }
-/* line 280, ../sass/style.scss */
+/* line 300, ../sass/style.scss */
 .responsive-design .gray-half-bg {
   background: #f8f8f9;
   width: 50%;
   height: 100%;
   position: absolute;
 }
-/* line 288, ../sass/style.scss */
+/* line 308, ../sass/style.scss */
 .responsive-design .left-img {
   position: relative;
   overflow: hidden;
 }
-/* line 292, ../sass/style.scss */
+/* line 312, ../sass/style.scss */
 .responsive-design .left-img img {
   position: relative;
   right: -185px;
   width: 100%;
   height: 460px;
 }
-/* line 299, ../sass/style.scss */
+/* line 319, ../sass/style.scss */
 .responsive-design .myCarousel {
   padding-bottom: 100px;
 }
-/* line 302, ../sass/style.scss */
+/* line 322, ../sass/style.scss */
 .responsive-design .carousel {
   position: relative;
   text-align: center;
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-------PARALX(PAGE-5)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 310, ../sass/style.scss */
+/* line 330, ../sass/style.scss */
 .paralx {
   background-image: url("../images/plants-bg.jpg");
   min-height: 250px;
@@ -327,7 +345,7 @@ html p {
   background-size: cover;
   text-align: center;
 }
-/* line 319, ../sass/style.scss */
+/* line 339, ../sass/style.scss */
 .paralx #swag {
   padding-top: 70px;
   padding-bottom: 70px;
@@ -337,26 +355,26 @@ html p {
   letter-spacing: 5px;
   font-size: 40px;
 }
-/* line 328, ../sass/style.scss */
+/* line 348, ../sass/style.scss */
 .paralx #swag #spn {
   padding-top: 15px;
   font-size: 25px;
   color: #fff;
   padding-bottom: 10px;
 }
-/* line 337, ../sass/style.scss */
+/* line 357, ../sass/style.scss */
 .paralx #spn1 {
   font-size: 40px;
   color: #fff;
   margin-top: 20px;
   margin-bottom: 0;
 }
-/* line 343, ../sass/style.scss */
+/* line 363, ../sass/style.scss */
 .paralx .fa-chevron-down {
   padding-left: 4px;
 }
 
-/* line 348, ../sass/style.scss */
+/* line 368, ../sass/style.scss */
 .bg-parallax-3 {
   background-image: url("../images/plants-bg.jpg");
   min-height: 300px;
@@ -368,7 +386,7 @@ html p {
   background-attachment: fixed;
 }
 
-/* line 358, ../sass/style.scss */
+/* line 378, ../sass/style.scss */
 .dwn-btn {
   padding-right: 2px;
   padding-left: 2px;
@@ -383,32 +401,32 @@ html p {
   text-align: center;
   border-radius: 50%;
 }
-/* line 371, ../sass/style.scss */
+/* line 391, ../sass/style.scss */
 .dwn-btn:hover {
   background-color: #3dc9b3;
   color: #fff;
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<------------PORTFOLIO(PAGE-6)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 378, ../sass/style.scss */
+/* line 398, ../sass/style.scss */
 .portfolio .col-md-4 {
   padding-top: 80px;
 }
-/* line 381, ../sass/style.scss */
+/* line 401, ../sass/style.scss */
 .portfolio .image {
   width: 100%;
   display: block;
   height: auto;
   position: relative;
 }
-/* line 389, ../sass/style.scss */
+/* line 409, ../sass/style.scss */
 .portfolio .overly {
   width: 100%;
   display: block;
   height: auto;
   position: relative;
 }
-/* line 396, ../sass/style.scss */
+/* line 416, ../sass/style.scss */
 .portfolio .overlay {
   position: absolute;
   top: 0;
@@ -422,11 +440,11 @@ html p {
   transition: 0.5s ease;
   text-align: center;
 }
-/* line 410, ../sass/style.scss */
+/* line 430, ../sass/style.scss */
 .portfolio .overly:hover .overlay {
   width: 100%;
 }
-/* line 414, ../sass/style.scss */
+/* line 434, ../sass/style.scss */
 .portfolio .glyphicon {
   color: #fff;
   font-size: 30px;
@@ -437,7 +455,7 @@ html p {
   -ms-transform: translate(-50%, -50%);
   white-space: nowrap;
 }
-/* line 424, ../sass/style.scss */
+/* line 444, ../sass/style.scss */
 .portfolio #gly {
   color: #fff;
   font-size: 15px;
@@ -445,14 +463,14 @@ html p {
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-----------99-PROBLEMS(PAGE-7)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 433, ../sass/style.scss */
+/* line 453, ../sass/style.scss */
 .ignite {
   background-color: #242830;
   padding: 70px 0;
   text-align: center;
 }
 
-/* line 439, ../sass/style.scss */
+/* line 459, ../sass/style.scss */
 .ignite-btn {
   display: inline-block;
   padding: 25px 40px;
@@ -462,7 +480,7 @@ html p {
   font-weight: bold;
   letter-spacing: 1px;
 }
-/* line 448, ../sass/style.scss */
+/* line 468, ../sass/style.scss */
 .ignite-btn:hover {
   color: #3dc9b3;
   border-color: #3dc9b3;
@@ -470,7 +488,7 @@ html p {
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----TEAM(PAGE-8)-----<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 456, ../sass/style.scss */
+/* line 476, ../sass/style.scss */
 #team h1 {
   font-size: 15px;
   text-transform: uppercase;
@@ -482,7 +500,7 @@ html p {
   font-family: "Varela Round", sans-serif;
   position: relative;
 }
-/* line 467, ../sass/style.scss */
+/* line 487, ../sass/style.scss */
 #team h1:after {
   content: url("../images/Layer.png");
   position: absolute;
@@ -493,12 +511,12 @@ html p {
   background: #fff;
 }
 
-/* line 479, ../sass/style.scss */
+/* line 500, ../sass/style.scss */
 .section-padding {
   padding: 0 0 70px;
 }
 
-/* line 483, ../sass/style.scss */
+/* line 504, ../sass/style.scss */
 #a2 {
   color: #353535;
   font-family: "Varela Round", sans-serif;
@@ -507,7 +525,7 @@ html p {
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<------SUBSCRIBE(PAGE-9)-------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 490, ../sass/style.scss */
+/* line 514, ../sass/style.scss */
 .subscribe {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -519,7 +537,7 @@ html p {
   background-size: cover;
   text-align: center;
 }
-/* line 501, ../sass/style.scss */
+/* line 525, ../sass/style.scss */
 .subscribe h1 {
   margin-top: 20px;
   display: inline-block;
@@ -534,13 +552,13 @@ html p {
   margin-bottom: 40px;
   border: hidden;
 }
-/* line 515, ../sass/style.scss */
+/* line 539, ../sass/style.scss */
 .subscribe i {
   display: inline-block;
   font-size: 2em;
   margin-bottom: 20px;
 }
-/* line 521, ../sass/style.scss */
+/* line 545, ../sass/style.scss */
 .subscribe input[type=text] {
   background-color: rgba(255, 255, 255, 0.1);
   border: solid 1px;
@@ -552,7 +570,7 @@ html p {
   vertical-align: baseline;
   font-family: "Varela Round", sans-serif;
 }
-/* line 532, ../sass/style.scss */
+/* line 556, ../sass/style.scss */
 .subscribe input[type=submit] {
   background-color: rgba(61, 201, 179, 0.5);
   border: solid 1px;
@@ -565,17 +583,17 @@ html p {
   line-height: normal;
   font-family: "Varela Round", sans-serif;
 }
-/* line 544, ../sass/style.scss */
+/* line 568, ../sass/style.scss */
 .subscribe input[type=submit]:hover {
   background-color: #3dc9b3;
 }
-/* line 547, ../sass/style.scss */
+/* line 571, ../sass/style.scss */
 .subscribe input[type=text]:hover {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<------CONTACT(PAGE-10)-------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 553, ../sass/style.scss */
+/* line 577, ../sass/style.scss */
 .up-btn {
   width: 50px;
   height: 50px;
@@ -590,17 +608,17 @@ html p {
   top: -26px;
   position: relative;
 }
-/* line 566, ../sass/style.scss */
+/* line 590, ../sass/style.scss */
 .up-btn:hover {
   background-color: #3dc9b3;
   color: white;
 }
 
-/* line 572, ../sass/style.scss */
+/* line 596, ../sass/style.scss */
 .contact {
   background-color: whitesmoke;
 }
-/* line 576, ../sass/style.scss */
+/* line 600, ../sass/style.scss */
 .contact h1 {
   font-size: 15px;
   text-transform: uppercase;
@@ -612,7 +630,7 @@ html p {
   font-family: "Varela Round", sans-serif;
   position: relative;
 }
-/* line 587, ../sass/style.scss */
+/* line 611, ../sass/style.scss */
 .contact h1:after {
   content: url("../images/Layer.png");
   position: absolute;
@@ -622,7 +640,7 @@ html p {
   padding: 0px 15px;
   background: whitesmoke;
 }
-/* line 597, ../sass/style.scss */
+/* line 621, ../sass/style.scss */
 .contact h2 {
   font-size: 15px;
   text-transform: uppercase;
@@ -633,18 +651,18 @@ html p {
   font-weight: bold;
   font-family: "Varela Round", sans-serif;
 }
-/* line 609, ../sass/style.scss */
+/* line 633, ../sass/style.scss */
 .contact .light-box {
   background-color: #fff;
   text-align: center;
 }
 
-/* line 616, ../sass/style.scss */
+/* line 640, ../sass/style.scss */
 .contact-details {
   margin: 20px 0;
 }
 
-/* line 620, ../sass/style.scss */
+/* line 644, ../sass/style.scss */
 #fa-i {
   color: black;
   padding-bottom: 0px;
@@ -652,47 +670,47 @@ html p {
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<-------FOOTER-------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 627, ../sass/style.scss */
+/* line 651, ../sass/style.scss */
 footer {
   background-color: #242830;
   width: 100%;
   height: 100px;
 }
-/* line 633, ../sass/style.scss */
+/* line 657, ../sass/style.scss */
 footer a {
   color: #a1a9b0;
 }
-/* line 635, ../sass/style.scss */
+/* line 659, ../sass/style.scss */
 footer a:hover {
   color: #3dc9b3;
   text-decoration: none;
 }
-/* line 640, ../sass/style.scss */
+/* line 664, ../sass/style.scss */
 footer p {
   color: #fff;
   font-family: "Varela Round", sans-serif;
   padding-top: 25px;
 }
 
-/* line 649, ../sass/style.scss */
+/* line 673, ../sass/style.scss */
 .legals {
   text-align: left;
 }
 
-/* line 653, ../sass/style.scss */
+/* line 677, ../sass/style.scss */
 .credit {
   text-align: right;
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<------------"SOCIAL ICONS"----------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 659, ../sass/style.scss */
+/* line 683, ../sass/style.scss */
 .social {
   padding-top: 20px;
   margin-top: auto;
   margin-bottom: 20px;
 }
 
-/* line 666, ../sass/style.scss */
+/* line 690, ../sass/style.scss */
 ul#social-button {
   list-style: none;
   margin: 0;
@@ -700,7 +718,7 @@ ul#social-button {
   list-style-type: none;
 }
 
-/* line 673, ../sass/style.scss */
+/* line 697, ../sass/style.scss */
 .social-btn {
   width: 40px;
   height: 40px;
@@ -715,14 +733,14 @@ ul#social-button {
   box-sizing: border-box;
   display: inline-block;
 }
-/* line 686, ../sass/style.scss */
+/* line 710, ../sass/style.scss */
 .social-btn:hover {
   background-color: #3dc9b3;
   color: #fff;
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<--------CAROUSELS-------------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 696, ../sass/style.scss */
+/* line 721, ../sass/style.scss */
 .myCarousel h1 {
   font-size: 15px;
   text-transform: uppercase;
@@ -734,7 +752,7 @@ ul#social-button {
   font-family: "Varela Round", sans-serif;
   position: relative;
 }
-/* line 707, ../sass/style.scss */
+/* line 732, ../sass/style.scss */
 .myCarousel h1:after {
   content: url("../images/Layer.png");
   position: absolute;
@@ -745,11 +763,11 @@ ul#social-button {
   background: #fff;
 }
 
-/* line 720, ../sass/style.scss */
+/* line 745, ../sass/style.scss */
 .carousel-indicators {
   bottom: -40px;
 }
-/* line 722, ../sass/style.scss */
+/* line 747, ../sass/style.scss */
 .carousel-indicators li {
   margin-top: 100px;
   border-radius: 13px;
@@ -763,14 +781,14 @@ ul#social-button {
   cursor: pointer;
 }
 
-/* line 738, ../sass/style.scss */
+/* line 763, ../sass/style.scss */
 ol.carousel-indicators li.active {
   height: 13px;
   width: 13px;
   background-color: #242830;
 }
 
-/* line 745, ../sass/style.scss */
+/* line 770, ../sass/style.scss */
 #carsl {
   padding-left: 10%;
   padding-right: 10%;
@@ -778,7 +796,7 @@ ol.carousel-indicators li.active {
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 752, ../sass/style.scss */
+/* line 777, ../sass/style.scss */
 #return-to-top {
   z-index: 99;
   position: fixed;
@@ -800,7 +818,7 @@ ol.carousel-indicators li.active {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 773, ../sass/style.scss */
+/* line 798, ../sass/style.scss */
 #return-to-top i {
   color: #fff;
   margin: 0;
@@ -815,11 +833,11 @@ ol.carousel-indicators li.active {
   transition: all 0.3s ease;
 }
 
-/* line 787, ../sass/style.scss */
+/* line 812, ../sass/style.scss */
 #return-to-top:hover {
   background: #242830;
 }
-/* line 789, ../sass/style.scss */
+/* line 814, ../sass/style.scss */
 #return-to-top:hover i {
   color: #fff;
   top: 5px;

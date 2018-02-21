@@ -78,16 +78,14 @@ html{
     transition: 0.3s;
 
 
+
     &:hover {
       color: $white;
+      border-bottom: $greenish-blue-op 3px solid;
+      margin-left: 43%;
+      margin-right: 35%;
+      text-align: center;
     }
-  }
-  li{
-    border-bottom: 1px dotted $gray;
-    margin-right: 150px;
-    margin-left: 100px;
-    text-align: center;
-
   }
   .closebtn {
     position: absolute;
@@ -123,7 +121,7 @@ html{
   background-size: cover;
   height: auto;
   text-align: center;
-  
+  background-attachment: fixed;
   position: relative;
   padding: 40px 0 160px 0;
   height: auto;
@@ -136,12 +134,19 @@ html{
         color: $black;
         font-family: $font-style;
         border: hidden;
+          -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: 1;
+        
       }
  p {
     display: block;
     font-family: $font-style;
     color: $light-gray;
     padding-bottom: 45px;
+      -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: 1;
     }
   
 span{
@@ -167,12 +172,16 @@ span{
     box-sizing: border-box;
     box-shadow: 0px 3px 0px 0px $dark-greenish-blue;
     font-family: $font-style;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 0.1s;
+    -webkit-animation-iteration-count: 1;
   }
   }
 
 .inner {
   padding-top: 165px;
 }
+
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-----INTRO(PAGE-2)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -184,6 +193,9 @@ span{
   padding-bottom: 8%;
   text-align: center;
   margin-bottom: 50px;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-iteration-count: 1;
 
   a {
     color: black;
@@ -197,6 +209,7 @@ span{
       position: relative;
       font-weight: bold;
       font-family: $font-style;
+
    }
     h1:after {
     content: url(../images/Layer.png);
@@ -228,6 +241,7 @@ span{
       position: relative;
       font-weight: bold;
       font-family: $font-style;
+        
    }
    h1:after {
        content: url(../images/Layer.png);
@@ -263,10 +277,16 @@ span{
         position: relative;
         margin: 0 auto 50px;
         box-sizing: border-box;
+        &:hover{
+          font-size: 70px;
+          height:180px;
+          width: 180px;
+          border-radius: 100%;
+          box-shadow: 0px 0px 30px 0 $greenish-blue;
+        }
       }
      p{
       padding-bottom: 10px;
-
      }
    }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-------SPLIT-SCREEN(PAGE-4)----------------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -474,6 +494,7 @@ span{
     padding: 0px 15px;
     background: $white;
   }
+
 }
 
 .section-padding{
@@ -486,6 +507,9 @@ span{
   font-size: $font3;
   padding-top: 20px;
 }
+
+
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<------SUBSCRIBE(PAGE-9)-------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .subscribe{
 
@@ -686,6 +710,7 @@ ul#social-button{
   &:hover{
     background-color: $greenish-blue;
     color: $white;
+
   }
 }
 
