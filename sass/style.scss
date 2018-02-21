@@ -51,8 +51,9 @@ html{
   left: 35%;
   font-size: $font2;
   cursor: pointer;
+ 
   span{
-  color: $dark-black !important; 
+  color: $dark-black !important;
 }
 }
 .sidenav {
@@ -77,14 +78,10 @@ html{
     display: block;
     transition: 0.3s;
 
+    &:hover{
+      color:$whitesmoke;
+      font-size: 33px;
 
-
-    &:hover {
-      color: $white;
-      border-bottom: $greenish-blue-op 3px solid;
-      margin-left: 43%;
-      margin-right: 35%;
-      text-align: center;
     }
   }
   .closebtn {
@@ -134,9 +131,9 @@ html{
         color: $black;
         font-family: $font-style;
         border: hidden;
-          -webkit-animation-duration: 2s;
-  -webkit-animation-delay: 1s;
-  -webkit-animation-iteration-count: 1;
+        -webkit-animation-duration: 2s;
+        
+        -webkit-animation-iteration-count: 1;
         
       }
  p {
@@ -145,7 +142,7 @@ html{
     color: $light-gray;
     padding-bottom: 45px;
       -webkit-animation-duration: 2s;
-  -webkit-animation-delay: 1s;
+  
   -webkit-animation-iteration-count: 1;
     }
   
@@ -175,6 +172,11 @@ span{
     -webkit-animation-duration: 2s;
     -webkit-animation-delay: 0.1s;
     -webkit-animation-iteration-count: 1;
+
+    &:hover, &:focus{
+      box-shadow: 0 1.5em 1.5em -0.4em $dark-greenish-blue;
+      transform: translateY(-0.25em);
+    }
   }
   }
 
@@ -221,8 +223,8 @@ span{
     background: $whitesmoke;
   }
 
+  }
   
-}
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<---------FEATURES(PAGE-3)------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -350,6 +352,9 @@ span{
          font-size: $font5;
          color: $white;
          padding-bottom: 10px;
+         -webkit-animation-duration: 2s;
+        -webkit-animation-delay: 0.1s;
+        -webkit-animation-iteration-count: 1;
         }
        
     }
@@ -359,6 +364,9 @@ span{
         color: $white;
         margin-top: 20px;
         margin-bottom: 0;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-delay: 0.1s;
+        -webkit-animation-iteration-count: 1;
        }
        .fa-chevron-down {
         padding-left: 4px;
@@ -388,6 +396,9 @@ span{
   line-height: 40px;
   text-align: center;
   border-radius: 50%;
+
+    -webkit-animation-delay: 2s;
+ 
   &:hover{
     background-color: $greenish-blue;
     color: $white;
@@ -495,6 +506,7 @@ span{
     background: $white;
   }
 
+
 }
 
 .section-padding{
@@ -507,6 +519,7 @@ span{
   font-size: $font3;
   padding-top: 20px;
 }
+
 
 
 
