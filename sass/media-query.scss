@@ -18,6 +18,14 @@
   
 }
  
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+    a {
+      font-size: 18px;
+    }
+  }
+}
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<------home------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
   
@@ -80,7 +88,12 @@
       right: -140px;
     }
   }
-  @media only screen and (min-width: 1200px){
+  @media only screen and (min-width: $md+1) and (max-width: $lg) {
+     .left-img img{
+      right: -180px;
+    }
+  }
+  @media only screen and (min-width: $lg+1){
      .left-img img{
       right: -220px;
     }
