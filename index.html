@@ -181,7 +181,7 @@
 <section class="portfolio text-center section-padding" id="portfolio">
     <div class="container">
         <div class="row">
-          <div class="card card-raised card-carousel">
+          <div class="card card-raised card-carousel wow zoomIn" data-wow-duration="2s">
           <div id="carousel-generic" class="carousel slide" data-ride="carousel">
           <div class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -190,7 +190,7 @@
               </ol>
           <div class="carousel-inner">
             <div class="item active">
-                  <div class="col-md-4 wow fadeInUp" data-wow-duration="1s">
+                  <div class="col-md-4">
                     <div class="imge">
                       <div class="overly">
                         
@@ -208,7 +208,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
                     </div>
                 </div>
-                  <div class="col-md-4 wow fadeInUp" data-wow-duration="2s">
+                  <div class="col-md-4">
                     <div class="imge">
                        <div class="overly">
                         <a href="#home">
@@ -224,7 +224,7 @@
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
                     </div>
                 </div>
-                  <div class="col-md-4 wow fadeInUp" data-wow-duration="3s">
+                  <div class="col-md-4">
                     <div class="imge">
                       <div class="overly">
                        <a href="#home">
@@ -278,7 +278,7 @@
                       </div>
                     </div>
                   
-                    <div class="col-md-4 wow">
+                    <div class="col-md-4">
                       <div class="imge">
                         <div class="overly">
                          <a href="#home">
@@ -503,31 +503,19 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://gitcdn.xyz/repo/thesmart/jquery-scrollspy/0.1.3/scrollspy.js"></script>
+
 <script src="javascripts/javas.js"></script>
 <script src="javascripts/wow.min_.js"></script>
 <script>
-  
-  var $body = $('body');                               // Repeat demo content
-  var $box = $('.box');
-  for (var i = 0; i < 20; i++) {
-    $box.clone().appendTo($body);
-  }
-  WOW.prototype.addBox = function(element) {           // Helper function for add element box list in WOW
-    this.boxes.push(element);
-  };
-  var wow = new WOW();                                 // Init WOW.js and get instance
+  wow = new WOW(
+  {
+    boxClass: 'wow',
+    animateClass: 'animated',
+    offset: 0,
+    mobile: true,
+    live: true
+  })
   wow.init();
-
-  
-  $('.wow').on('scrollSpy:exit', function() {            // Attach scrollSpy to .wow elements for detect view exit events,
-    $(this).css({                                         // then reset elements and add again for animation
-      'visibility': 'hidden',
-      'animation-name': 'none'
-    }).removeClass('animated');
-    wow.addBox(this);
-  }).scrollSpy();
-
 </script>
 </body>
 </html>
