@@ -182,20 +182,21 @@ html p {
   -webkit-animation-duration: 2s;
   -webkit-animation-delay: 1.4s;
   -webkit-animation-iteration-count: 1;
+  transition: all 0.5s ease;
 }
-/* line 177, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 .bg-parallax-1 .button:hover, .bg-parallax-1 .button:focus {
   box-shadow: 0 1em 1em -0.4em #309383;
   transform: translateY(-0.2em);
 }
 
-/* line 184, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
 .inner {
   padding-top: 165px;
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-----INTRO(PAGE-2)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 191, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 #intro {
   background-color: whitesmoke;
   padding-top: 8%;
@@ -205,12 +206,12 @@ html p {
   text-align: center;
   margin-bottom: 50px;
 }
-/* line 201, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 #intro a {
   color: black;
   font-family: "Varela Round", sans-serif;
 }
-/* line 205, ../sass/style.scss */
+/* line 206, ../sass/style.scss */
 #intro h1 {
   font-size: 15px;
   text-transform: uppercase;
@@ -223,7 +224,7 @@ html p {
   -webkit-animation-delay: 0.5s;
   -webkit-animation-iteration-count: 1;
 }
-/* line 218, ../sass/style.scss */
+/* line 219, ../sass/style.scss */
 #intro h1:after {
   content: url(../images/Layer.png);
   position: absolute;
@@ -233,7 +234,7 @@ html p {
   padding: 0px 15px;
   background: whitesmoke;
 }
-/* line 227, ../sass/style.scss */
+/* line 228, ../sass/style.scss */
 #intro p {
   -webkit-animation-duration: 2s;
   -webkit-animation-delay: 1s;
@@ -241,14 +242,14 @@ html p {
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<---------FEATURES(PAGE-3)------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 238, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 .intro2 {
   padding-right: 60px;
   padding-left: 60px;
   padding-bottom: 10px;
   text-align: center;
 }
-/* line 245, ../sass/style.scss */
+/* line 246, ../sass/style.scss */
 .intro2 h1 {
   font-size: 15px;
   text-transform: uppercase;
@@ -258,7 +259,7 @@ html p {
   font-weight: bold;
   font-family: "Varela Round", sans-serif;
 }
-/* line 255, ../sass/style.scss */
+/* line 256, ../sass/style.scss */
 .intro2 h1:after {
   content: url(../images/Layer.png);
   position: absolute;
@@ -268,14 +269,14 @@ html p {
   padding: 0px 15px;
   background: #fff;
 }
-/* line 265, ../sass/style.scss */
+/* line 266, ../sass/style.scss */
 .intro2 h6 {
   color: #353535;
   font-family: "Varela Round", sans-serif;
   font-size: 15px;
   padding-top: 20px;
 }
-/* line 272, ../sass/style.scss */
+/* line 273, ../sass/style.scss */
 .intro2 .icon {
   height: 175px;
   width: 175px;
@@ -293,8 +294,9 @@ html p {
   position: relative;
   margin: 0 auto 50px;
   box-sizing: border-box;
+  transition: all 0.5s ease;
 }
-/* line 289, ../sass/style.scss */
+/* line 291, ../sass/style.scss */
 .intro2 .icon:hover {
   font-size: 70px;
   height: 180px;
@@ -302,48 +304,48 @@ html p {
   border-radius: 100%;
   box-shadow: 0px 0px 30px 0 #3dc9b3;
 }
-/* line 297, ../sass/style.scss */
+/* line 299, ../sass/style.scss */
 .intro2 p {
   padding-bottom: 10px;
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-------SPLIT-SCREEN(PAGE-4)----------------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 303, ../sass/style.scss */
+/* line 305, ../sass/style.scss */
 .responsive-design {
   display: flex;
   position: relative;
   z-index: 1;
   background: linear-gradient(to right, #f8f8f9, white);
 }
-/* line 309, ../sass/style.scss */
+/* line 311, ../sass/style.scss */
 .responsive-design .gray-half-bg {
   width: 50%;
   height: 100%;
   position: absolute;
 }
-/* line 317, ../sass/style.scss */
+/* line 319, ../sass/style.scss */
 .responsive-design .left-img {
   position: relative;
   overflow: hidden;
 }
-/* line 321, ../sass/style.scss */
+/* line 323, ../sass/style.scss */
 .responsive-design .left-img img {
   position: relative;
   width: 100%;
   height: 460px;
 }
-/* line 328, ../sass/style.scss */
+/* line 330, ../sass/style.scss */
 .responsive-design .myCarousel {
   padding-bottom: 100px;
 }
-/* line 331, ../sass/style.scss */
+/* line 333, ../sass/style.scss */
 .responsive-design .carousel {
   position: relative;
   text-align: center;
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-------PARALX(PAGE-5)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 339, ../sass/style.scss */
+/* line 341, ../sass/style.scss */
 .paralx {
   background-image: url("../images/plants-bg.jpg");
   min-height: 250px;
@@ -353,7 +355,7 @@ html p {
   background-size: cover;
   text-align: center;
 }
-/* line 348, ../sass/style.scss */
+/* line 350, ../sass/style.scss */
 .paralx #swag {
   padding-top: 70px;
   padding-bottom: 70px;
@@ -363,7 +365,7 @@ html p {
   letter-spacing: 5px;
   font-size: 40px;
 }
-/* line 357, ../sass/style.scss */
+/* line 359, ../sass/style.scss */
 .paralx #swag #spn {
   padding-top: 15px;
   font-size: 25px;
@@ -373,7 +375,7 @@ html p {
   -webkit-animation-delay: 0.1s;
   -webkit-animation-iteration-count: 1;
 }
-/* line 369, ../sass/style.scss */
+/* line 371, ../sass/style.scss */
 .paralx #spn1 {
   font-size: 40px;
   color: #fff;
@@ -383,12 +385,12 @@ html p {
   -webkit-animation-delay: 0.1s;
   -webkit-animation-iteration-count: 1;
 }
-/* line 378, ../sass/style.scss */
+/* line 380, ../sass/style.scss */
 .paralx .fa-chevron-down {
   padding-left: 4px;
 }
 
-/* line 383, ../sass/style.scss */
+/* line 385, ../sass/style.scss */
 .bg-parallax-3 {
   background-image: url("../images/plants-bg.jpg");
   min-height: 300px;
@@ -400,7 +402,7 @@ html p {
   background-attachment: fixed;
 }
 
-/* line 393, ../sass/style.scss */
+/* line 395, ../sass/style.scss */
 .dwn-btn {
   padding-right: 2px;
   padding-left: 2px;
@@ -416,32 +418,32 @@ html p {
   border-radius: 50%;
   -webkit-animation-delay: 1.5s;
 }
-/* line 409, ../sass/style.scss */
+/* line 411, ../sass/style.scss */
 .dwn-btn:hover {
   background-color: #3dc9b3;
   color: #fff;
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<------------PORTFOLIO(PAGE-6)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 416, ../sass/style.scss */
+/* line 418, ../sass/style.scss */
 .portfolio .col-md-4 {
   padding-top: 80px;
 }
-/* line 419, ../sass/style.scss */
+/* line 421, ../sass/style.scss */
 .portfolio .image {
   width: 100%;
   display: block;
   height: auto;
   position: relative;
 }
-/* line 427, ../sass/style.scss */
+/* line 429, ../sass/style.scss */
 .portfolio .overly {
   width: 100%;
   display: block;
   height: auto;
   position: relative;
 }
-/* line 434, ../sass/style.scss */
+/* line 436, ../sass/style.scss */
 .portfolio .overlay {
   position: absolute;
   top: 0;
@@ -455,11 +457,11 @@ html p {
   transition: 0.5s ease;
   text-align: center;
 }
-/* line 448, ../sass/style.scss */
+/* line 450, ../sass/style.scss */
 .portfolio .overly:hover .overlay {
   width: 100%;
 }
-/* line 452, ../sass/style.scss */
+/* line 454, ../sass/style.scss */
 .portfolio .glyphicon {
   color: #fff;
   font-size: 30px;
@@ -470,7 +472,7 @@ html p {
   -ms-transform: translate(-50%, -50%);
   white-space: nowrap;
 }
-/* line 462, ../sass/style.scss */
+/* line 464, ../sass/style.scss */
 .portfolio #gly {
   color: #fff;
   font-size: 15px;
@@ -478,14 +480,14 @@ html p {
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-----------99-PROBLEMS(PAGE-7)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 471, ../sass/style.scss */
+/* line 473, ../sass/style.scss */
 .ignite {
   background-color: #242830;
   padding: 70px 0;
   text-align: center;
 }
 
-/* line 477, ../sass/style.scss */
+/* line 479, ../sass/style.scss */
 .ignite-btn {
   display: inline-block;
   padding: 25px 40px;
@@ -495,7 +497,7 @@ html p {
   font-weight: bold;
   letter-spacing: 1px;
 }
-/* line 486, ../sass/style.scss */
+/* line 488, ../sass/style.scss */
 .ignite-btn:hover {
   color: #3dc9b3;
   border-color: #3dc9b3;
@@ -503,7 +505,7 @@ html p {
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----TEAM(PAGE-8)-----<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 494, ../sass/style.scss */
+/* line 496, ../sass/style.scss */
 #team h1 {
   font-size: 15px;
   text-transform: uppercase;
@@ -515,7 +517,7 @@ html p {
   font-family: "Varela Round", sans-serif;
   position: relative;
 }
-/* line 505, ../sass/style.scss */
+/* line 507, ../sass/style.scss */
 #team h1:after {
   content: url("../images/Layer.png");
   position: absolute;
@@ -526,12 +528,12 @@ html p {
   background: #fff;
 }
 
-/* line 519, ../sass/style.scss */
+/* line 521, ../sass/style.scss */
 .section-padding {
   padding: 0 0 70px;
 }
 
-/* line 523, ../sass/style.scss */
+/* line 525, ../sass/style.scss */
 #a2 {
   color: #353535;
   font-family: "Varela Round", sans-serif;
@@ -540,7 +542,7 @@ html p {
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<------SUBSCRIBE(PAGE-9)-------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 534, ../sass/style.scss */
+/* line 536, ../sass/style.scss */
 .subscribe {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -552,7 +554,7 @@ html p {
   background-size: cover;
   text-align: center;
 }
-/* line 545, ../sass/style.scss */
+/* line 547, ../sass/style.scss */
 .subscribe h1 {
   margin-top: 20px;
   display: inline-block;
@@ -568,13 +570,17 @@ html p {
   margin-bottom: 40px;
   border: hidden;
 }
-/* line 560, ../sass/style.scss */
+/* line 562, ../sass/style.scss */
 .subscribe i {
   display: inline-block;
   font-size: 2em;
   margin-bottom: 20px;
 }
-/* line 566, ../sass/style.scss */
+/* line 567, ../sass/style.scss */
+.subscribe input {
+  transition: background 0.55s ease;
+}
+/* line 569, ../sass/style.scss */
 .subscribe input[type=text] {
   background-color: rgba(255, 255, 255, 0.1);
   border: solid 1px;
@@ -586,7 +592,7 @@ html p {
   vertical-align: baseline;
   font-family: "Varela Round", sans-serif;
 }
-/* line 577, ../sass/style.scss */
+/* line 582, ../sass/style.scss */
 .subscribe input[type=submit] {
   background-color: rgba(61, 201, 179, 0.5);
   border: solid 1px;
@@ -599,18 +605,21 @@ html p {
   line-height: normal;
   font-family: "Varela Round", sans-serif;
 }
-/* line 589, ../sass/style.scss */
+/* line 596, ../sass/style.scss */
 .subscribe input[type=submit]:hover {
   background-color: #3dc9b3;
+  padding: 21px;
+  transition: all 0.5s ease;
 }
-/* line 593, ../sass/style.scss */
+/* line 602, ../sass/style.scss */
 .subscribe input[type=text]:hover {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<------CONTACT(PAGE-10)-------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 600, ../sass/style.scss */
+/* line 609, ../sass/style.scss */
 .up-btn {
+  transition: 0.5s ease;
   width: 50px;
   height: 50px;
   background-color: rgba(61, 201, 179, 0.5);
@@ -624,17 +633,17 @@ html p {
   top: -26px;
   position: relative;
 }
-/* line 613, ../sass/style.scss */
+/* line 623, ../sass/style.scss */
 .up-btn:hover {
   background-color: #3dc9b3;
   color: white;
 }
 
-/* line 619, ../sass/style.scss */
+/* line 629, ../sass/style.scss */
 .contact {
   background-color: whitesmoke;
 }
-/* line 623, ../sass/style.scss */
+/* line 633, ../sass/style.scss */
 .contact h1 {
   font-size: 15px;
   text-transform: uppercase;
@@ -646,7 +655,7 @@ html p {
   font-family: "Varela Round", sans-serif;
   position: relative;
 }
-/* line 634, ../sass/style.scss */
+/* line 644, ../sass/style.scss */
 .contact h1:after {
   content: url("../images/Layer.png");
   position: absolute;
@@ -656,7 +665,7 @@ html p {
   padding: 0px 15px;
   background: whitesmoke;
 }
-/* line 644, ../sass/style.scss */
+/* line 654, ../sass/style.scss */
 .contact h2 {
   font-size: 15px;
   text-transform: uppercase;
@@ -667,23 +676,24 @@ html p {
   font-weight: bold;
   font-family: "Varela Round", sans-serif;
 }
-/* line 656, ../sass/style.scss */
+/* line 666, ../sass/style.scss */
 .contact .light-box {
+  transition: all 0.5s ease;
   background-color: #fff;
   text-align: center;
 }
-/* line 659, ../sass/style.scss */
+/* line 670, ../sass/style.scss */
 .contact .light-box:hover {
   border-bottom: 4px solid #3dc9b3;
   transform: translate3d(0, -8px, 2px);
 }
 
-/* line 667, ../sass/style.scss */
+/* line 679, ../sass/style.scss */
 .contact-details {
   margin: 20px 0;
 }
 
-/* line 671, ../sass/style.scss */
+/* line 683, ../sass/style.scss */
 #fa-i {
   color: black;
   padding-bottom: 0px;
@@ -691,47 +701,47 @@ html p {
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<-------FOOTER-------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 678, ../sass/style.scss */
+/* line 690, ../sass/style.scss */
 footer {
   background-color: #242830;
   width: 100%;
   height: 100px;
 }
-/* line 684, ../sass/style.scss */
+/* line 696, ../sass/style.scss */
 footer a {
   color: #a1a9b0;
 }
-/* line 686, ../sass/style.scss */
+/* line 698, ../sass/style.scss */
 footer a:hover {
   color: #3dc9b3;
   text-decoration: none;
 }
-/* line 691, ../sass/style.scss */
+/* line 703, ../sass/style.scss */
 footer p {
   color: #fff;
   font-family: "Varela Round", sans-serif;
   padding-top: 25px;
 }
 
-/* line 700, ../sass/style.scss */
+/* line 712, ../sass/style.scss */
 .legals {
   text-align: left;
 }
 
-/* line 704, ../sass/style.scss */
+/* line 716, ../sass/style.scss */
 .credit {
   text-align: right;
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<------------"SOCIAL ICONS"----------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 710, ../sass/style.scss */
+/* line 722, ../sass/style.scss */
 .social {
   padding-top: 20px;
   margin-top: auto;
   margin-bottom: 20px;
 }
 
-/* line 717, ../sass/style.scss */
+/* line 729, ../sass/style.scss */
 ul#social-button {
   list-style: none;
   margin: 0;
@@ -739,7 +749,7 @@ ul#social-button {
   list-style-type: none;
 }
 
-/* line 724, ../sass/style.scss */
+/* line 736, ../sass/style.scss */
 .social-btn {
   width: 40px;
   height: 40px;
@@ -754,7 +764,7 @@ ul#social-button {
   box-sizing: border-box;
   display: inline-block;
 }
-/* line 737, ../sass/style.scss */
+/* line 749, ../sass/style.scss */
 .social-btn:hover {
   background-color: #3dc9b3;
   color: #fff;
@@ -762,7 +772,7 @@ ul#social-button {
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<--------CAROUSELS-------------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 749, ../sass/style.scss */
+/* line 761, ../sass/style.scss */
 .myCarousel h1 {
   font-size: 15px;
   text-transform: uppercase;
@@ -774,7 +784,7 @@ ul#social-button {
   font-family: "Varela Round", sans-serif;
   position: relative;
 }
-/* line 760, ../sass/style.scss */
+/* line 772, ../sass/style.scss */
 .myCarousel h1:after {
   content: url("../images/Layer.png");
   position: absolute;
@@ -785,11 +795,11 @@ ul#social-button {
   background: #fff;
 }
 
-/* line 773, ../sass/style.scss */
+/* line 785, ../sass/style.scss */
 .carousel-indicators {
   bottom: -40px;
 }
-/* line 775, ../sass/style.scss */
+/* line 787, ../sass/style.scss */
 .carousel-indicators li {
   margin-top: 100px;
   border-radius: 13px;
@@ -803,14 +813,14 @@ ul#social-button {
   cursor: pointer;
 }
 
-/* line 791, ../sass/style.scss */
+/* line 803, ../sass/style.scss */
 ol.carousel-indicators li.active {
   height: 13px;
   width: 13px;
   background-color: #242830;
 }
 
-/* line 798, ../sass/style.scss */
+/* line 810, ../sass/style.scss */
 #carsl {
   padding-left: 10%;
   padding-right: 10%;
@@ -818,7 +828,7 @@ ol.carousel-indicators li.active {
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 805, ../sass/style.scss */
+/* line 817, ../sass/style.scss */
 #return-to-top {
   z-index: 99;
   position: fixed;
@@ -840,7 +850,7 @@ ol.carousel-indicators li.active {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 826, ../sass/style.scss */
+/* line 838, ../sass/style.scss */
 #return-to-top i {
   color: #fff;
   margin: 0;
@@ -855,11 +865,11 @@ ol.carousel-indicators li.active {
   transition: all 0.3s ease;
 }
 
-/* line 840, ../sass/style.scss */
+/* line 852, ../sass/style.scss */
 #return-to-top:hover {
   background: #242830;
 }
-/* line 842, ../sass/style.scss */
+/* line 854, ../sass/style.scss */
 #return-to-top:hover i {
   color: #fff;
   top: 5px;

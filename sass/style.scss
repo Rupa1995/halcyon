@@ -173,6 +173,7 @@ span{
     -webkit-animation-duration: 2s;
     -webkit-animation-delay: 1.4s;
     -webkit-animation-iteration-count: 1;
+    transition: all 0.5s ease;
 
     &:hover, &:focus{
       box-shadow: 0 1em 1em -0.4em $dark-greenish-blue;
@@ -286,6 +287,7 @@ span{
         position: relative;
         margin: 0 auto 50px;
         box-sizing: border-box;
+        transition: all 0.5s ease;
         &:hover{
           font-size: 70px;
           height:180px;
@@ -563,7 +565,9 @@ span{
     margin-bottom: 20px;
   }
   input{
+    transition: background 0.55s ease;
     &[type=text]{
+
       background-color: $trans-gray;
       border: solid 1px;
       border-color: $white;
@@ -573,8 +577,10 @@ span{
       line-height: normal;
       vertical-align: baseline;
       font-family: $font-style;
+   
     }
     &[type=submit]{
+
       background-color: $greenish-blue-op;
       border: solid 1px;
       border-color: $greenish-blue-op;
@@ -585,19 +591,23 @@ span{
       cursor: pointer;
       line-height: normal;
       font-family: $font-style;
+      
     }
       &[type=submit]:hover{
         background-color: $greenish-blue;
+        padding: 21px;
+        transition: all 0.5s ease;
       
       }
        &[type=text]:hover{
         background-color: $trans-gray-hover;
-        
+
       }
 }
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<------CONTACT(PAGE-10)-------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .up-btn{
+  transition: 0.5s ease;
   width: 50px;
   height: 50px;
   background-color: $greenish-blue-op;
@@ -654,11 +664,13 @@ h2{
 }
 
 .light-box{
+  transition: all 0.5s ease;
   background-color: $white;
   text-align: center;
   &:hover{
     border-bottom: 4px solid $greenish-blue;
     transform: translate3d(0,-8px, 2px);
+    
   }
   
 }
