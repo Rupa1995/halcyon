@@ -56,11 +56,6 @@ html{
   span{
     transition: all 0.5s ease;
   color: $dark-black !important;
-
-&:hover{
-  font-size: 43px;
-
-}
 }
 }
 .sidenav {
@@ -232,8 +227,8 @@ span{
     background: $whitesmoke;
   }
   p{
-     -webkit-animation-duration: 2s;
-  -webkit-animation-delay: 1s;
+     -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 0.8s;
   -webkit-animation-iteration-count: 1;
   }
 
@@ -601,8 +596,7 @@ span{
     }
       &[type=submit]:hover{
         background-color: $greenish-blue;
-        padding: 21px;
-        transition: all 0.5s ease;
+        
       
       }
        &[type=text]:hover{
@@ -675,7 +669,7 @@ h2{
   text-align: center;
   &:hover{
     border-bottom: 4px solid $greenish-blue;
-    transform: translate3d(0,-8px, 2px);
+    transform: translate3d(0,-5px, 2px);
     
   }
   
