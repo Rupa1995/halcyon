@@ -572,8 +572,8 @@ span{
       background-color: $trans-gray;
       border: solid 1px;
       border-color: $white;
-      padding: 20px;
-      width: 30%;
+      padding: 18px;
+      width: 31%;
       color: $white;
       line-height: normal;
       vertical-align: baseline;
@@ -585,7 +585,7 @@ span{
       background-color: $greenish-blue-op;
       border: solid 1px;
       border-color: $greenish-blue-op;
-      padding: 20px;
+      padding: 18px;
       color: $white;
       text-transform: uppercase;
       letter-spacing: 1px;
@@ -629,6 +629,7 @@ span{
 .contact{
   
   background-color: $whitesmoke;
+  padding-bottom: 35px;
 
   h1{
   font-size: $font3;
@@ -667,6 +668,8 @@ h2{
   transition: all 0.5s ease;
   background-color: $white;
   text-align: center;
+  border-bottom: 4px solid $white;
+  cursor: pointer;
   &:hover{
     border-bottom: 4px solid $greenish-blue;
     transform: translate3d(0,-5px, 2px);
@@ -783,27 +786,14 @@ ul#social-button{
 
 
 .carousel-indicators{
-    bottom: -40px;
+
     li{
-    margin-top: 100px;
-    border-radius: 13px;
-    height: 13px;
-    width: 13px;
-    margin: 2px;
-    font-weight: 800;
-    color: black;
-    border: 3px solid $dark-gray;
-    bottom: 50px;
+    border: 1.5px solid $dark-gray;
     cursor: pointer;
-
-
   }
 
 }
  ol.carousel-indicators li.active{
-
-   height: 13px;
-  width: 13px;
   background-color: $dark-black;
   }
 
@@ -857,6 +847,61 @@ ul#social-button{
   }
 }
 
+#viewport_image ,#viewport_image_a ,#viewport_image_b {
+  padding: 2vmin;
+  background: $whitesmoke;
+  img{
+    max-height: 92vh;
+    max-width: 90vw;
+  }
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*.modal {
+  display: none;
+  position: absolute;
+  z-index: 999;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+/*.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}*/
+
+/* The Close Button */
+/*.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cursor {
+  cursor: pointer
+}
+.mySlides {
+  display: none;
+}*/
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @import 'media-query';
 

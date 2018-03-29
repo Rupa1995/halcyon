@@ -586,8 +586,8 @@ html p {
   background-color: rgba(255, 255, 255, 0.1);
   border: solid 1px;
   border-color: #fff;
-  padding: 20px;
-  width: 30%;
+  padding: 18px;
+  width: 31%;
   color: #fff;
   line-height: normal;
   vertical-align: baseline;
@@ -598,7 +598,7 @@ html p {
   background-color: rgba(61, 201, 179, 0.5);
   border: solid 1px;
   border-color: rgba(61, 201, 179, 0.5);
-  padding: 20px;
+  padding: 18px;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -641,8 +641,9 @@ html p {
 /* line 629, ../sass/style.scss */
 .contact {
   background-color: whitesmoke;
+  padding-bottom: 35px;
 }
-/* line 633, ../sass/style.scss */
+/* line 634, ../sass/style.scss */
 .contact h1 {
   font-size: 15px;
   text-transform: uppercase;
@@ -654,7 +655,7 @@ html p {
   font-family: "Varela Round", sans-serif;
   position: relative;
 }
-/* line 644, ../sass/style.scss */
+/* line 645, ../sass/style.scss */
 .contact h1:after {
   content: url("../images/Layer.png");
   position: absolute;
@@ -664,7 +665,7 @@ html p {
   padding: 0px 15px;
   background: whitesmoke;
 }
-/* line 654, ../sass/style.scss */
+/* line 655, ../sass/style.scss */
 .contact h2 {
   font-size: 15px;
   text-transform: uppercase;
@@ -675,24 +676,26 @@ html p {
   font-weight: bold;
   font-family: "Varela Round", sans-serif;
 }
-/* line 666, ../sass/style.scss */
+/* line 667, ../sass/style.scss */
 .contact .light-box {
   transition: all 0.5s ease;
   background-color: #fff;
   text-align: center;
+  border-bottom: 4px solid #fff;
+  cursor: pointer;
 }
-/* line 670, ../sass/style.scss */
+/* line 673, ../sass/style.scss */
 .contact .light-box:hover {
   border-bottom: 4px solid #3dc9b3;
   transform: translate3d(0, -5px, 2px);
 }
 
-/* line 679, ../sass/style.scss */
+/* line 682, ../sass/style.scss */
 .contact-details {
   margin: 20px 0;
 }
 
-/* line 683, ../sass/style.scss */
+/* line 686, ../sass/style.scss */
 #fa-i {
   color: black;
   padding-bottom: 0px;
@@ -700,47 +703,47 @@ html p {
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<-------FOOTER-------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 690, ../sass/style.scss */
+/* line 693, ../sass/style.scss */
 footer {
   background-color: #242830;
   width: 100%;
   height: 100px;
 }
-/* line 696, ../sass/style.scss */
+/* line 699, ../sass/style.scss */
 footer a {
   color: #a1a9b0;
 }
-/* line 698, ../sass/style.scss */
+/* line 701, ../sass/style.scss */
 footer a:hover {
   color: #3dc9b3;
   text-decoration: none;
 }
-/* line 703, ../sass/style.scss */
+/* line 706, ../sass/style.scss */
 footer p {
   color: #fff;
   font-family: "Varela Round", sans-serif;
   padding-top: 25px;
 }
 
-/* line 712, ../sass/style.scss */
+/* line 715, ../sass/style.scss */
 .legals {
   text-align: left;
 }
 
-/* line 716, ../sass/style.scss */
+/* line 719, ../sass/style.scss */
 .credit {
   text-align: right;
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<------------"SOCIAL ICONS"----------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 722, ../sass/style.scss */
+/* line 725, ../sass/style.scss */
 .social {
   padding-top: 20px;
   margin-top: auto;
   margin-bottom: 20px;
 }
 
-/* line 729, ../sass/style.scss */
+/* line 732, ../sass/style.scss */
 ul#social-button {
   list-style: none;
   margin: 0;
@@ -748,7 +751,7 @@ ul#social-button {
   list-style-type: none;
 }
 
-/* line 736, ../sass/style.scss */
+/* line 739, ../sass/style.scss */
 .social-btn {
   width: 40px;
   height: 40px;
@@ -763,7 +766,7 @@ ul#social-button {
   box-sizing: border-box;
   display: inline-block;
 }
-/* line 749, ../sass/style.scss */
+/* line 752, ../sass/style.scss */
 .social-btn:hover {
   background-color: #3dc9b3;
   color: #fff;
@@ -771,7 +774,7 @@ ul#social-button {
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<--------CAROUSELS-------------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 761, ../sass/style.scss */
+/* line 764, ../sass/style.scss */
 .myCarousel h1 {
   font-size: 15px;
   text-transform: uppercase;
@@ -783,7 +786,7 @@ ul#social-button {
   font-family: "Varela Round", sans-serif;
   position: relative;
 }
-/* line 772, ../sass/style.scss */
+/* line 775, ../sass/style.scss */
 .myCarousel h1:after {
   content: url("../images/Layer.png");
   position: absolute;
@@ -794,32 +797,18 @@ ul#social-button {
   background: #fff;
 }
 
-/* line 785, ../sass/style.scss */
-.carousel-indicators {
-  bottom: -40px;
-}
-/* line 787, ../sass/style.scss */
+/* line 790, ../sass/style.scss */
 .carousel-indicators li {
-  margin-top: 100px;
-  border-radius: 13px;
-  height: 13px;
-  width: 13px;
-  margin: 2px;
-  font-weight: 800;
-  color: black;
-  border: 3px solid #A9A9A9;
-  bottom: 50px;
+  border: 1.5px solid #A9A9A9;
   cursor: pointer;
 }
 
-/* line 803, ../sass/style.scss */
+/* line 796, ../sass/style.scss */
 ol.carousel-indicators li.active {
-  height: 13px;
-  width: 13px;
   background-color: #242830;
 }
 
-/* line 810, ../sass/style.scss */
+/* line 800, ../sass/style.scss */
 #carsl {
   padding-left: 10%;
   padding-right: 10%;
@@ -827,7 +816,7 @@ ol.carousel-indicators li.active {
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* line 817, ../sass/style.scss */
+/* line 807, ../sass/style.scss */
 #return-to-top {
   z-index: 99;
   position: fixed;
@@ -849,7 +838,7 @@ ol.carousel-indicators li.active {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 838, ../sass/style.scss */
+/* line 828, ../sass/style.scss */
 #return-to-top i {
   color: #fff;
   margin: 0;
@@ -864,16 +853,73 @@ ol.carousel-indicators li.active {
   transition: all 0.3s ease;
 }
 
-/* line 852, ../sass/style.scss */
+/* line 842, ../sass/style.scss */
 #return-to-top:hover {
   background: #242830;
 }
-/* line 854, ../sass/style.scss */
+/* line 844, ../sass/style.scss */
 #return-to-top:hover i {
   color: #fff;
   top: 5px;
 }
 
+/* line 850, ../sass/style.scss */
+#viewport_image, #viewport_image_a, #viewport_image_b {
+  padding: 2vmin;
+  background: whitesmoke;
+}
+/* line 853, ../sass/style.scss */
+#viewport_image img, #viewport_image_a img, #viewport_image_b img {
+  max-height: 92vh;
+  max-width: 90vw;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*.modal {
+  display: none;
+  position: absolute;
+  z-index: 999;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+/*.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}*/
+/* The Close Button */
+/*.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cursor {
+  cursor: pointer
+}
+.mySlides {
+  display: none;
+}*/
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<------nav------<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media only screen and (max-width: 990px) {

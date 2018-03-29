@@ -117,7 +117,7 @@
     <div class="row">
       <div class="col-sm-6 left-img block" ><img src="./images/iphone-bg.png" class="img-responsive wow slideInRight" data-wow-duration="3s"> </div>
       <div class="col-sm-6 block">
-        <div class="myCarousel wow zoomIn" data-wow-duration="3s">
+        <div class="myCarousel">
            
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                   <div class="carousel slide" data-ride="carousel">
@@ -165,7 +165,7 @@
   </div>
 </section>
 
-<section class="paralx text-center wow zoomIn" data-wow-duration="2s">
+<section class="paralx text-center">
     <div class="container bg-parallax-3">
       <div class="row">
         <div class="col-md-12" id="swag">
@@ -181,7 +181,7 @@
 <section class="portfolio text-center section-padding" id="portfolio">
     <div class="container">
         <div class="row">
-          <div class="card card-raised card-carousel wow zoomIn" data-wow-duration="2s">
+          <div class="card card-raised card-carousel">
           <div id="carousel-generic" class="carousel slide" data-ride="carousel">
           <div class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
@@ -194,7 +194,7 @@
                     <div class="imge">
                       <div class="overly">
                         
-                          <a href="#home">
+                          <a href="#viewport_image" class="viewport_image_open">
                             <img src="images/portfolio-01.jpg" alt="Lights" class="image">
                             <div class="overlay">
                               <div class="glyphicon glyphicon-search">
@@ -202,6 +202,9 @@
                               </div>
                             </div>
                           </a>
+                          <div id="viewport_image">
+                            <img src="images/portfolio-01.jpg" alt="">
+                          </div>
                         </div>
                         <h6 id="a2"><b>CREATIVE MINDS</b></h6>
                         <hr>
@@ -211,13 +214,16 @@
                   <div class="col-md-4">
                     <div class="imge">
                        <div class="overly">
-                        <a href="#home">
+                        <a href="#viewport_image_a" class="viewport_image_a_open">
                         <img src="images/portfolio-02.jpg" alt="laptop" class="image">
                         <div class="overlay">
                               <div class="glyphicon glyphicon-search"><p id="gly"><b>view more</b></p>
                               </div>
                             </div>
                         </a>
+                        <div id="viewport_image_a">
+                            <img src="images/portfolio-02.jpg" alt="">
+                          </div>
                       </div>
                       <h6 id="a2"><b>CREATIVE HEARTS</b></h6>
                       <hr>
@@ -226,28 +232,31 @@
                 </div>
                   <div class="col-md-4">
                     <div class="imge">
-                      <div class="overly">
-                       <a href="#home">
-                       <img src="images/portfolio-03.jpg" alt="dog" class="image">
-                         <div class="overlay">
+                        <div class="overly">
+                       <a href="#viewport_image_b" class="viewport_image_b_open">
+                          <img src="images/portfolio-03.jpg" alt="dog" class="image">
+                          <div class="overlay">
                               <div class="glyphicon glyphicon-search">
                                 <p id="gly"><b>view more</b></p>
                               </div>
-                            </div>
-                               </a>
-                             </div>
+                          </div>
+                        </a>
+                        <div id="viewport_image_b">
+                            <img src="images/portfolio-03.jpg" alt="">
+                          </div>
+                        </div>
                         <h6 id="a2"><b>CREATIVE IDEAS</b></h6>
                         <hr>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                        </div>
+                    </div>
                 </div>
               </div>
               <div class="item">
                     <div class="col-md-4">
                       <div class="imge">
                         <div class="overly">
-                          <a href="#home">
-                            <img src="images/portfolio-01.jpg" alt="Lights" class="image">
+                          <a href="#viewport_image" class="viewport_image_open">
+                          <img src="images/portfolio-01.jpg" alt="Lights" class="image">
                             <div class="overlay">
                                 <div class="glyphicon glyphicon-search">
                                   <p id="gly"><b>view more</b></p>
@@ -263,7 +272,7 @@
                     <div class="col-md-4">
                       <div class="imge">
                         <div class="overly">
-                          <a href="#home">
+                          <a href="#viewport_image_a" class="viewport_image_a_open">
                           <img src="images/portfolio-02.jpg" alt="laptop" class="image">
                           <div class="overlay">
                                 <div class="glyphicon glyphicon-search">
@@ -281,7 +290,7 @@
                     <div class="col-md-4">
                       <div class="imge">
                         <div class="overly">
-                         <a href="#home">
+                         <a href="#viewport_image_b" class="viewport_image_b_open">
                          <img src="images/portfolio-03.jpg" alt="dog" class="image">
                            <div class="overlay">
                                 <div class="glyphicon glyphicon-search">
@@ -303,12 +312,11 @@
      </div>
     </div>
 </section> 
-
 <div class="ignite text-center">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <a href="#home" class="ignite-btn wow infinite pulse" id="ign">Ignite Your Passion</a>
+          <a href="#ignite" class="ignite-btn wow pulse" id="ign">Ignite Your Passion</a>
         </div>
       </div>
     </div>
@@ -321,98 +329,264 @@
           <h1 class="wow fadeInDown">WE'RE A TEAM THAT ADORE WHAT WE DO</h1>
           <br><br><br>
           <div class="row">
-            <div class="col-md-4">
-             
-                    <img src="images/team-01.png" alt="john snow" class="wow zoomIn">
-                
-              <h6 id="a2" class="wow fadeInUp"><b>JON SNOW</b></h6><hr>
-              <p class="wow fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-               <div class="social">
-                 <ul id="social-button" class="list-inline">
-                  <li>
-                    <a href="#home" class="social-btn wow rollIn">
-                      <i class="fa fa-dribbble"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#home" class="social-btn wow rollIn">
-                      <i class="fa fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#home" class="social-btn wow rollIn">
-                      <i class="fa fa-envelope"></i>
-                    </a>
-                  </li>
-                 </ul>
-              </div>
-             </div>
-            <div class="col-md-4">
-             
-                  <img src="images/team-02.png" alt="cersei lannister" class="wow zoomIn">
-                
-              <h6 id="a2" class="wow fadeInUp"><b>CERSEI LANNISTER</b></h6><hr>
-              <p class="wow fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-              <div class="social">
-                  <ul id="social-button" class="list-inline">
-                    <li>
-                      <a href="#home" class="social-btn wow rollIn">
-                        <i class="fa fa-dribbble"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#home" class="social-btn wow rollIn">
-                        <i class="fa fa-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#home" class="social-btn wow rollIn">
-                        <i class="fa fa-envelope"></i>
-                      </a>
-                    </li>
-                  </ul>
-              </div>
-            </div>
-            <div class="col-md-4">
-                
-                    <img src="images/team-03.png" alt="jamie lannister" class="wow zoomIn">
-                
-              <h6 id="a2" class="wow fadeInUp"><b>JAMIE LANNISTER</b></h6><hr>
-              <p class="wow fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-              <div class="social">
-                 <ul id="social-button" class="list-inline">
-                  <li>
-                    <a href="#home" class="social-btn wow rollIn">
-                      <i class="fa fa-dribbble"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#home" class="social-btn wow rollIn">
-                      <i class="fa fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#home" class="social-btn wow rollIn">
-                      <i class="fa fa-envelope"></i>
-                    </a>
-                  </li>
-                </ul>
-            </div>
-            </div> 
-          </div>
-          <div class="clearfix"></div>
-        </div>
+                <div class="card card-raised card-carousel">
+                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#mycarousel" data-slide-to="1" class=""></li>
+                      <li data-target="#mycarousel" data-slide-to="2" class=""></li>
+                    </ol>
+                <div class="carousel-inner">
+                  <div class="item active">
+                      <div class="col-md-4">             
+                          <img src="images/team-01.png" alt="john snow" class="wow zoomIn" data-wow-duration="2s">
+                          <h6 id="a2"><b>JON SNOW</b></h6><hr>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                           <div class="social">
+                             <ul id="social-button" class="list-inline">
+                              <li>
+                                <a href="#" class="social-btn wow rollIn">
+                                  <i class="fa fa-dribbble"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="social-btn wow rollIn">
+                                  <i class="fa fa-twitter"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="social-btn wow rollIn">
+                                  <i class="fa fa-envelope"></i>
+                                </a>
+                              </li>
+                             </ul>
+                          </div>
+                      </div>
+                        <div class="col-md-4">
+                         
+                            <img src="images/team-02.png" alt="cersei lannister" class="wow zoomIn" data-wow-duration="2s">
+                            
+                          <h6 id="a2"><b>CERSEI LANNISTER</b></h6><hr>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                          <div class="social">
+                              <ul id="social-button" class="list-inline">
+                                <li>
+                                  <a href="#" class="social-btn wow rollIn">
+                                    <i class="fa fa-dribbble"></i>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#" class="social-btn wow rollIn">
+                                    <i class="fa fa-twitter"></i>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#" class="social-btn wow rollIn">
+                                    <i class="fa fa-envelope"></i>
+                                  </a>
+                                </li>
+                              </ul>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                            
+                                <img src="images/team-03.png" alt="jamie lannister" class="wow zoomIn" data-wow-duration="2s">
+                            
+                          <h6 id="a2"><b>JAMIE LANNISTER</b></h6><hr>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                          <div class="social">
+                             <ul id="social-button" class="list-inline">
+                              <li>
+                                <a href="#" class="social-btn wow rollIn">
+                                  <i class="fa fa-dribbble"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="social-btn wow rollIn">
+                                  <i class="fa fa-twitter"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="social-btn wow rollIn">
+                                  <i class="fa fa-envelope"></i>
+                                </a>
+                              </li>
+                            </ul>
+                        </div>
+                        </div> 
+                      </div>
+                    <div class="item">
+                        <div class="col-md-4">             
+                          <img src="images/team-01.png" alt="john snow">
+                          <h6 id="a2"><b>JON SNOW</b></h6><hr>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                           <div class="social">
+                             <ul id="social-button" class="list-inline">
+                              <li>
+                                <a href="#" class="social-btn wow rollIn">
+                                  <i class="fa fa-dribbble"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="social-btn wow rollIn">
+                                  <i class="fa fa-twitter"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="social-btn wow rollIn">
+                                  <i class="fa fa-envelope"></i>
+                                </a>
+                              </li>
+                             </ul>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                         
+                          <img src="images/team-02.png" alt="cersei lannister">
+                            
+                          <h6 id="a2"><b>CERSEI LANNISTER</b></h6><hr>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                          <div class="social">
+                              <ul id="social-button" class="list-inline">
+                                <li>
+                                  <a href="#" class="social-btn wow rollIn">
+                                    <i class="fa fa-dribbble"></i>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#" class="social-btn wow rollIn">
+                                    <i class="fa fa-twitter"></i>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#" class="social-btn wow rollIn">
+                                    <i class="fa fa-envelope"></i>
+                                  </a>
+                                </li>
+                              </ul>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                            
+                          <img src="images/team-03.png" alt="jamie lannister">
+                            
+                          <h6 id="a2"><b>JAMIE LANNISTER</b></h6><hr>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                          <div class="social">
+                             <ul id="social-button" class="list-inline">
+                              <li>
+                                <a href="#" class="social-btn wow rollIn">
+                                  <i class="fa fa-dribbble"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="social-btn wow rollIn">
+                                  <i class="fa fa-twitter"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="social-btn wow rollIn">
+                                  <i class="fa fa-envelope"></i>
+                                </a>
+                              </li>
+                            </ul>
+                        </div>
+                        </div> 
+                      </div> 
+                     <div class="item">
+                        <div class="col-md-4">             
+                          <img src="images/team-01.png" alt="john snow">
+                          <h6 id="a2"><b>JON SNOW</b></h6><hr>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                           <div class="social">
+                             <ul id="social-button" class="list-inline">
+                              <li>
+                                <a href="#" class="social-btn wow rollIn">
+                                  <i class="fa fa-dribbble"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="social-btn wow rollIn">
+                                  <i class="fa fa-twitter"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="social-btn wow rollIn">
+                                  <i class="fa fa-envelope"></i>
+                                </a>
+                              </li>
+                             </ul>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                         
+                          <img src="images/team-02.png" alt="cersei lannister">
+                            
+                          <h6 id="a2"><b>CERSEI LANNISTER</b></h6><hr>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                          <div class="social">
+                              <ul id="social-button" class="list-inline">
+                                <li>
+                                  <a href="#" class="social-btn wow rollIn">
+                                    <i class="fa fa-dribbble"></i>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#" class="social-btn wow rollIn">
+                                    <i class="fa fa-twitter"></i>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#" class="social-btn wow rollIn">
+                                    <i class="fa fa-envelope"></i>
+                                  </a>
+                                </li>
+                              </ul>
+                          </div>
+                        </div>
+                        <div class="col-md-4">  
+                          <img src="images/team-03.png" alt="jamie lannister">
+                            
+                          <h6 id="a2"><b>JAMIE LANNISTER</b></h6><hr>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                          <div class="social">
+                             <ul id="social-button" class="list-inline">
+                              <li>
+                                <a href="#" class="social-btn wow rollIn">
+                                  <i class="fa fa-dribbble"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="social-btn wow rollIn">
+                                  <i class="fa fa-twitter"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="social-btn wow rollIn">
+                                  <i class="fa fa-envelope"></i>
+                                </a>
+                              </li>
+                            </ul>
+                        </div>
+                        </div> 
+                      </div>
+                    </div>  
+                  </div>
+           </div>
+           </div>
       </div>
+          <div class="clearfix"></div>
     </div>
 </section>
   
-<section class="subscribe text-center wow slideInLeft" data-wow-duration="2s">
+<section class="subscribe text-center">
     <div class="container">
       <h1>
         <i class="fa fa-paper-plane wow lightSpeedIn" data-wow-delay="2s" ></i><br>
         <span>Subscribe to stay in the loop</span>
       </h1>
-      <form action="#home">
+      <form action="#">
         <input type="text" name="placeholder required">
         <input type="submit" value="Send">
       </form>
@@ -459,17 +633,17 @@
                  <div class="social">
                           <ul id="social-button" class="list-inline">
                             <li>
-                              <a href="#home" class="social-btn wow rollIn">
+                              <a href="#" class="social-btn wow rollIn">
                                 <i class="fa fa-dribbble"></i>
                               </a>
                             </li>
                             <li>
-                              <a href="#home" class="social-btn wow rollIn">
+                              <a href="#" class="social-btn wow rollIn">
                                 <i class="fa fa-twitter"></i>
                               </a>
                             </li>
                             <li>
-                              <a href="#home" class="social-btn wow rollIn">
+                              <a href="#" class="social-btn wow rollIn">
                                 <i class="fa fa-envelope"></i>
                               </a>
                             </li>
@@ -506,7 +680,16 @@
 
 <script src="javascripts/javas.js"></script>
 <script src="javascripts/wow.min_.js"></script>
+<script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+
+<script src="https://rawgit.com/vast-engineering/jquery-popup-overlay/gh-pages/jquery.popupoverlay.js"></script>
+  
 <script>
+  // $(document).ready(function(){
+    $('#viewport_image').popup();
+    $('#viewport_image_a').popup();
+    $('#viewport_image_b').popup();
+
   wow = new WOW(
   {
     boxClass: 'wow',
@@ -517,5 +700,6 @@
   })
   wow.init();
 </script>
+
 </body>
 </html>
